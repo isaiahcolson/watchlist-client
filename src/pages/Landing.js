@@ -1,11 +1,9 @@
 import React from 'react';
 
-import LandingNav from './landing-nav';
-
-function Landing() {
+const Landing = () => {
     return(
         <div>
-            <LandingNav />
+            <h1>You are on the landing page.</h1>
         </div>
     );
 }
