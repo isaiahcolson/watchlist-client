@@ -10,11 +10,11 @@ import Signup from '../pages/Signup';
 function Routes(props) {
     return(
         <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path='/signup' component={Landing} />
+            <Route exact path='/' component={Landing} />
+            <Route path='/signup' component={Signup} />
             <Route path='/login' component={Login} />
-            <Route path='/titles' component={Profile} />
-            <Route path='/profile' component={Signup} />
+            <Route path='/titles' component={Home} />
+            <Route path='/profile' component={Profile} />
         </Switch>
     );
 }
