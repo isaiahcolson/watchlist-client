@@ -1,11 +1,28 @@
 import React from 'react';
 
-const Home = () => {
-    return(
-        <div>
-            <h1>You are on the home page.</h1>
-        </div>
-    );
+import TitleModel from '../models/title';
+import Titles from '../components/Titles/Titles';
+
+class Home extends React.Component {
+    state = {
+        titles: []
+    };
+
+    componentDidMount() {
+        this.fetchData();
+    }
+
+    fetchData = () => {
+        TitleModel.all().then((json) => {
+            this.setState({titles: json.titles});
+        });
+    }
+
+    render() {
+        return(
+            <Titles data={this.state.titles} />
+        );
+    }
 }
 
 export default Home;
