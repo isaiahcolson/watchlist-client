@@ -18,10 +18,11 @@ class Login extends React.Component {
 
         UserModel.login(this.state).then(data => {
             console.log(data)
-            if (!data.data) {
-                return false
+            if (!data.token) {
+                console.log('help')
             }
-            this.props.storeUser(data.data);
+            
+            this.props.storeUser(data.token);
             this.props.history.push('/profile');
         }).catch(err => console.log(err));
     }

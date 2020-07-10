@@ -152,13 +152,10 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 [x] add logout function to App
 [x] hide parts of nav for users/ non-users
 [x] add logout to user model
-
-
-
 * add watchlist model
 [X] create watchlist model
 [x] reference watchlist model in user model
-* add README to front end repo
+[x] replace user model ref in watchlist model with title model
 * go through code, clean out unused comments and add helpful ones
 
 
@@ -191,6 +188,7 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 * section by type on titles page
 * user can create multiple lists
 
+[ ] in back end in signup route, db.Watchlist.create a default Watchlist and set user id to token, this will give a default watchlist for the user 
 [ ] setup Watchlist show route
 [ ] setup Watchlist update route
 [ ] setup Watchlist delete route

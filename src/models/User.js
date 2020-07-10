@@ -20,12 +20,6 @@ class UserModel {
             body: JSON.stringify(credentials)
         }).then(res => res.json());
     }
-
-    static logout() {
-        return fetch(`${URL}/logout`, {
-            method: "DELETE",
-        });
-    }
 }
 
 export default UserModel;

@@ -3,7 +3,6 @@ import {withRouter} from 'react-router-dom';
 
 import Navbar from './components/navbar';
 import Routes from './config/routes';
-import UserModel from './models/User';
 import './App.css';
 
 function App(props) {
@@ -17,11 +16,8 @@ function App(props) {
   const logout = (event) => {
     event.preventDefault();
     localStorage.removeItem('uid');
-    UserModel.logout().then(res => {
-      console.log(res);
-      setCurrentUser(null);
-      props.history.push('/login');
-    });
+    setCurrentUser(null);
+    props.history.push('/login');
   }
 
   return(
