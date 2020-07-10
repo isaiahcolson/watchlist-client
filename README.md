@@ -116,7 +116,8 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] import font
 - [x] setup css variables
 - [x] position links
-- [ ] create logo
+- [x] create logo
+- [x] add logo to navbar
 - [ ] color sign up and profile links
 
 

@@ -1,15 +1,18 @@
 .navbar {
-    padding: 0 18px;
+    padding: 0 36px;
     background-color: var(--white);
     border-bottom: 1px solid var(--gray);
     height: 60px;
-    /* display: flex; */
-    /* flex-direction: row-reverse; */
     align-items: center;
 }
 
 .right-nav {
     float: right;
+}
+
+.navbar img {
+    margin: 10px 0;
+    height: 40px;
 }
 
 .navbar a {

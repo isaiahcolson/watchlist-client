@@ -9,7 +9,7 @@ const Navbar = (props) => {
         <header>
             {props.currentUser ? 
                 <div className="navbar">
-                    <NavLink to='/titles'>Home</NavLink>
+                    <NavLink to='/titles'><img src="WL-logo.png" alt="Watch Later Logo"/></NavLink>
                     <div className="right-nav">
                         <NavLink to='/profile'>Profile</NavLink>
                         <a href='/logout' onClick={props.logout}>Log Out</a>
@@ -17,7 +17,7 @@ const Navbar = (props) => {
                 </div>
             :
                 <div className="navbar">
-                    <NavLink to='/'>Landing</NavLink>
+                    <NavLink to='/'><img src="WL-logo.png" alt="Watch Later Logo"/></NavLink>
                     <div className="right-nav">
                         <NavLink to='/login'>Log In</NavLink>
                         <NavLink to='/signup'>Sign Up</NavLink>
