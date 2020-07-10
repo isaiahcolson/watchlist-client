@@ -20,7 +20,7 @@ const Navbar = (props) => {
                     <NavLink to='/'><img src="WL-logo.png" alt="Watch Later Logo"/></NavLink>
                     <div className="right-nav">
                         <NavLink to='/login'>Log In</NavLink>
-                        <NavLink to='/signup'>Sign Up</NavLink>
+                        <NavLink className="signup-button" to='/signup'>Sign Up</NavLink>
                     </div>
                 </div>
             }
