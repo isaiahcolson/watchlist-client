@@ -21,10 +21,10 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 ## Wireframe/ Design
 
 ### Wireframe
-![Watch Later Wireframes]('./public/WL-wireframes.png')
+![Watch Later Wireframes]('/public/WL-wireframes.png')
 
 ### Design References/ Styling
-![Watch Later Creative Assets]('./public/WL-creative-assets.png')
+![Watch Later Creative Assets]('/public/WL-creative-assets.png')
 
 
 
