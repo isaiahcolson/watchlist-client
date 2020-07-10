@@ -1,5 +1,7 @@
+// imports
 import React from 'react';
 
+// profile page with users information
 const Profile = () => {
     return(
         <div>
@@ -8,4 +10,5 @@ const Profile = () => {
     );
 }
 
+// exports
 export default Profile;

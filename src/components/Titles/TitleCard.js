@@ -1,5 +1,7 @@
+// imports
 import React from 'react';
 
+// component that renders title data
 const TitleCard = (props) => {
     const {name} = props.title;
     return(
@@ -9,4 +11,5 @@ const TitleCard = (props) => {
     )
 }
 
+// exports
 export default TitleCard;

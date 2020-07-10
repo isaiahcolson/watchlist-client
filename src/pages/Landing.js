@@ -1,5 +1,7 @@
+// imports
 import React from 'react';
 
+// landing page for non-auth users
 const Landing = () => {
     return(
         <div>
@@ -8,4 +10,5 @@ const Landing = () => {
     );
 }
 
+// exports
 export default Landing;

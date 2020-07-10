@@ -90,77 +90,21 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 ## Development Timeline
 
 ### Phase 1 (Wed Jul 8 - Fri Jul 10)
-* project initialization
-[x] start front end
-[x] start back end
-* setup server
-[x] setup server.js PORT
-[x] add watchlist model to ERD
-* create Title model
-[x] create Title Schema
-[x] connect to mongoose
-[x] setup Title show route
-* visible navbar across all pages
-[x] setup react structure
-[x] setup navbar
-* create routes
-[x] link routes in react
-[x] create pages folder
-[x] add page files in pages folder with boilerplate react
-[x] test routes
-* add title data reference
-[x] add 2 movies and 2 shows
-* connect front end and back end
-[x] seed data ref file
-[x] test database in insomnia
-[x] create models folder with model file in src
-[x] fetch all title data
-* show titles on titles page
-[x] create titles component folder and primary component file
-[x] create TitleCard component that renders a title
-[x] create Titles component that renders all titles
-[x] render TitleCard on Home page
-* add user model
-[x] create user model
-[x] add auth.js in controllers
-[x] update titles controller
-[x] update User model with json info
-[x] verify model index info
-[x] verify server info
-* user auth
-[x] watch token lecture
-[x] add middleware folder with authRequired.js
-[x] export auth in controllers index
-[x] add routes auth.js
-[x] add auth.js to routes index.js
-[x] add auth routes to server
-[x] add token to controllers auth.js
-[x] add authRequired.js
-[x] update routes with authRequired
-* user forms
-[x] initialize User model
-[x] add content to login page
-[x] add content to register page
-[x] add form to signup page
-[x] add form to login page
-[x] add user model fetch
-[x] import user model in register page
-[x] add user data to App.js
-[x] update config routes to send data
-[x] add fetch for login in user model
-[x] add handle submit function to login page
-[x] add logout function to App
-[x] hide parts of nav for users/ non-users
-[x] add logout to user model
-* add watchlist model
-[X] create watchlist model
-[x] reference watchlist model in user model
-[x] replace user model ref in watchlist model with title model
-* go through code, clean out unused comments and add helpful ones
-
-
-
-
+* project initialization, start front and back end
+* setup server PORT
+* create Title model with Schema, connect to mongoose, setup Title show route
+* setup react structure, setup navbar
+* link routes in react with boilerplate JSX
+* add 2 movies and 2 shows for seeded data in titleData.json
+* connect front end and back end, fetch all title data
+* create TitleCard component that renders Titles component, create Titles component that renders all title names
+* add User model
+* add authRequired middleware for back end, add auth to routes, add token to auth controller
+* add content to login and register pages, add user model fetch
+* users can register and login to accounts
+* hide parts of nav for users/ non-users, add logout function
+* ref Watchlist model to User model, ref Title model to Watchlist model
+* go through code, clean out unused comments and add helpful ones, remove tasks
 
 ### Phase 2 (Fri Jul 10 - Mon Jul 13)
 * style nav
@@ -188,11 +132,13 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 * section by type on titles page
 * user can create multiple lists
 
-[ ] in back end in signup route, db.Watchlist.create a default Watchlist and set user id to token, this will give a default watchlist for the user 
-[ ] setup Watchlist show route
-[ ] setup Watchlist update route
-[ ] setup Watchlist delete route
-[ ] setup Watchlist create route
-[ ] change favicon
+- [ ] add react flowchart to ERD picture
+- [ ] in back end in signup route, db.Watchlist.create a default Watchlist and set user id to token, this will give a default watchlist for the user
+- [ ] for page gatekeeping, add props.currentUser in routes for pages that I want hidden, like how we did for the navbar
+- [ ] setup Watchlist show route
+- [ ] setup Watchlist update route
+- [ ] setup Watchlist delete route
+- [ ] setup Watchlist create route
+- [ ] change favicon
 
 <!-- Here is the link for github README markdown https://guides.github.com/features/mastering-markdown/ -->

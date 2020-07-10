@@ -1,12 +1,13 @@
+// imports
 import React from 'react';
 import {Switch, Route} from 'react-router-dom';
-
 import Home from '../pages/Home';
 import Landing from '../pages/Landing';
 import Login from '../pages/Login';
 import Profile from '../pages/Profile';
 import Signup from '../pages/Signup';
 
+// routes
 function Routes(props) {
     return(
         <Switch>
@@ -26,4 +27,5 @@ function Routes(props) {
     );
 }
 
+// exports
 export default Routes;

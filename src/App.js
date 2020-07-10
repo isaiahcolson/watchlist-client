@@ -1,10 +1,11 @@
+// imports
 import React, {useState} from 'react';
 import {withRouter} from 'react-router-dom';
-
 import Navbar from './components/navbar';
 import Routes from './config/routes';
 import './App.css';
 
+// primary component
 function App(props) {
   const [currentUser, setCurrentUser] = useState(localStorage.getItem('uid'));
 
@@ -28,4 +29,5 @@ function App(props) {
   );
 }
 
+// exports
 export default withRouter(App);

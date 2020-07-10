@@ -1,6 +1,8 @@
+// imports
 import React from 'react';
 import UserModel from '../models/User';
 
+// signup page, non-auth users can signup for a new account
 class Signup extends React.Component {
     state = {
         firstName: "",
@@ -20,7 +22,6 @@ class Signup extends React.Component {
         event.preventDefault()
 
         UserModel.create(this.state).then(data => {
-            console.log(data);
             this.setState({
                 firstName: '',
                 lastName: '',
@@ -79,4 +80,5 @@ class Signup extends React.Component {
     }
 }
 
+// exports
 export default Signup;

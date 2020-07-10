@@ -1,5 +1,7 @@
+// back end user api url
 const URL = `http://localhost:3001/auth`;
 
+// class for User model that fetches users from database
 class UserModel {
     static create(data) {
         return fetch(`${URL}/register`, {
@@ -22,4 +24,5 @@ class UserModel {
     }
 }
 
+// exports
 export default UserModel;

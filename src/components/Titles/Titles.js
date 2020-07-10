@@ -1,7 +1,8 @@
+// imports
 import React from 'react';
-
 import TitleCard from './TitleCard';
 
+// component that generates all titles in database
 const Titles = (props) => {
     function generateTitles(titles) {
         return titles.map((title) => {
@@ -16,4 +17,5 @@ const Titles = (props) => {
     );
 }
 
+// exports
 export default Titles;

@@ -1,6 +1,8 @@
+// imports
 import React from 'react';
 import UserModel from '../models/User';
 
+// login page, auth users can login to an existing account
 class Login extends React.Component {
     state = {
         username: "",
@@ -15,13 +17,10 @@ class Login extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
-
         UserModel.login(this.state).then(data => {
-            console.log(data)
             if (!data.token) {
-                console.log('help')
+                return false
             }
-            
             this.props.storeUser(data.token);
             this.props.history.push('/profile');
         }).catch(err => console.log(err));
@@ -53,4 +52,5 @@ class Login extends React.Component {
     }
 }
 
+// exports
 export default Login;

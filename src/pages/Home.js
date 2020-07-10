@@ -1,8 +1,9 @@
+// imports
 import React from 'react';
-
 import TitleModel from '../models/title';
 import Titles from '../components/Titles/Titles';
 
+// home page for auth users
 class Home extends React.Component {
     state = {
         titles: []
@@ -25,4 +26,5 @@ class Home extends React.Component {
     }
 }
 
+// exports
 export default Home;
