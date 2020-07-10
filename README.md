@@ -70,17 +70,22 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 ### Users
 * first name
 * last name
+* username
 * email
 * password
-* watchlist
+* watchlists (ref Watchlist model)
+
+### Watchlist
+* name
+* titles (ref Title model)
 
 ### Titles
 * name
 * release year
-* type(movie or show)
+* media type (movie or show)
 * rating
-* image
-* genre
+* cover image
+* genres
 
 ### ERD
 <!-- TODO place image reference to ERD drawio -->
@@ -108,10 +113,20 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 
 ### Phase 2 (Fri Jul 10 - Mon Jul 13)
 * style nav
+- [x] import font
+- [x] setup css variables
+- [x] position links
+- [ ] create logo
+- [ ] color sign up and profile links
+
+
+
 * style landing page
-* style auth page
+* style signup page
+* style login page
 * add form validation
 * link titles in titles page to titles show pages
+* style nav for mobile
 
 ### Phase 3 (Mon Jul 13 - Tue Jul 14)
 * hide pages to unauthenticated users

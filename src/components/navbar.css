@@ -1,0 +1,22 @@
+.navbar {
+    padding: 0 18px;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--gray);
+    height: 60px;
+    /* display: flex; */
+    /* flex-direction: row-reverse; */
+    align-items: center;
+}
+
+.right-nav {
+    float: right;
+}
+
+.navbar a {
+    margin: 0 18px;
+    text-decoration: none;
+    color: var(--accent1);
+    font-size: var(--h4-size);
+    font-weight: var(--h4-weight);
+    line-height: 60px;
+}

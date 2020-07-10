@@ -1,24 +1,32 @@
+// imports
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import './navbar.css';
 
+// navbar with links to routes
 const Navbar = (props) => {
     return(
         <header>
             {props.currentUser ? 
-                <>
+                <div className="navbar">
                     <NavLink to='/titles'>Home</NavLink>
-                    <NavLink to='/profile'>Profile</NavLink>
-                    <a href='/logout' onClick={props.logout}>Log Out</a>
-                </>
+                    <div className="right-nav">
+                        <NavLink to='/profile'>Profile</NavLink>
+                        <a href='/logout' onClick={props.logout}>Log Out</a>
+                    </div>
+                </div>
             :
-                <>
+                <div className="navbar">
                     <NavLink to='/'>Landing</NavLink>
-                    <NavLink to='/signup'>Sign Up</NavLink>
-                    <NavLink to='/login'>Log In</NavLink>
-                </>
+                    <div className="right-nav">
+                        <NavLink to='/login'>Log In</NavLink>
+                        <NavLink to='/signup'>Sign Up</NavLink>
+                    </div>
+                </div>
             }
         </header>
     );
 }
 
+// exports
 export default Navbar;
