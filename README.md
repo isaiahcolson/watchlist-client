@@ -125,11 +125,11 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] change landing header one text
 - [x] add header three
 - [x] put text next to image
-- [ ] update landing image with design elements
-
-
-
+- [x] update landing image with design elements
 * style signup page
+
+
+
 * style login page
 * add form validation
 * link titles in titles page to titles show pages
