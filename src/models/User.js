@@ -2,7 +2,7 @@ const URL = `http://localhost:3001/auth`;
 
 class User {
     static create(data) {
-        return fetch(URL, {
+        return fetch(`${URL}/register`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -12,7 +12,7 @@ class User {
     }
 
     static login(credentials) {
-        return fetch(URL, {
+        return fetch(`${URL}/login`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -23,6 +23,9 @@ class User {
     }
 
     static logout() {
-        TODO
+        return fetch(`${URL}/logout`, {
+            method: "DELETE",
+            credentials: 'include'
+        });
     }
 }
