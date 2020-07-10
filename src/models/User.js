@@ -12,7 +12,14 @@ class User {
     }
 
     static login(credentials) {
-        TODO
+        return fetch(URL, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            credentials: 'include',
+            body: JSON.stringify(credentials)
+        }).then(res => res.json());
     }
 
     static logout() {
