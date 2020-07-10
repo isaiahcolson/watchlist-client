@@ -12,7 +12,14 @@ function Routes(props) {
         <Switch>
             <Route exact path='/' component={Landing} />
             <Route path='/signup' component={Signup} />
-            <Route path='/login' component={Login} />
+            <Route path='/login' 
+            render={(routeComponentProps) => {
+                return <Login 
+                    { ...routeComponentProps }
+                    currentUser={props.currentUser}
+                    storeUser={props.storeUser}
+                />
+            }} />
             <Route path='/titles' component={Home} />
             <Route path='/profile' component={Profile} />
         </Switch>
