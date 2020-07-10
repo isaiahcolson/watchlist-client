@@ -1,9 +1,19 @@
 import React from 'react';
 
 const Signup = () => {
+    state = {
+        firstName: "",
+        lastName: "",
+        username: "",
+        email: "",
+        password: ""
+    }
+
     return(
         <div>
-            <h1>You are on the signup page.</h1>
+            <form action="">
+                <input type="text"/>
+            </form>
         </div>
     );
 }
