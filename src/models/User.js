@@ -17,7 +17,6 @@ class UserModel {
             headers: {
                 "Content-Type": "application/json"
             },
-            credentials: 'include',
             body: JSON.stringify(credentials)
         }).then(res => res.json());
     }
@@ -25,7 +24,6 @@ class UserModel {
     static logout() {
         return fetch(`${URL}/logout`, {
             method: "DELETE",
-            credentials: 'include'
         });
     }
 }

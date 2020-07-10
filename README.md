@@ -1,6 +1,9 @@
 # Watch Later
 'Watch Later' is a web app for users to track movies and shows that they want to add to their watch list.
+
+The back end watchlist api can be referenced through [this repo](https://git.generalassemb.ly/colsonisaiah/watchlist-api).
 <!-- TODO add link to final deployed project -->
+[Here]() is the final deployed project on Heroku.
 
 
 
@@ -18,10 +21,10 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 ## Wireframe/ Design
 
 ### Wireframe
-<!-- TODO place images of wireframes here -->
+![Watch Later Wireframes]('./public/WL-wireframes.png')
 
 ### Design References/ Styling
-<!-- TODO place images of color schemes and references here -->
+![Watch Later Creative Assets]('./public/WL-creative-assets.png')
 
 
 
@@ -193,3 +196,5 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 [ ] setup Watchlist delete route
 [ ] setup Watchlist create route
 [ ] change favicon
+
+<!-- Here is the link for github README markdown https://guides.github.com/features/mastering-markdown/ -->
