@@ -119,16 +119,22 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] create logo
 - [x] add logo to navbar
 - [x] color sign up and profile links
-- [ ] replace logout with icon
-
-
-
 * style landing page
+- [x] create landing page image
+- [x] add image to landing page
+- [ ] change landing header one text
+- [ ] add header three
+- [ ] put text next to image
+- [ ] update landing image with design elements
+
+
+
 * style signup page
 * style login page
 * add form validation
 * link titles in titles page to titles show pages
 * style nav for mobile
+* style landing page for mobile
 
 ### Phase 3 (Mon Jul 13 - Tue Jul 14)
 * hide pages to unauthenticated users

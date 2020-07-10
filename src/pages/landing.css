@@ -1,0 +1,15 @@
+.landing-container {
+    margin: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-container div {
+    margin: 0 40px;
+}
+
+.landing-container img {
+    height: 500px;
+
+}
