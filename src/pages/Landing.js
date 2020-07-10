@@ -10,7 +10,8 @@ const Landing = () => {
                 <img src="WL-landing-image.png" alt="Landing"/>
             </div>
             <div>
-                <h1>You are on the landing page.</h1>
+                <h1>Watch Later, Now.</h1>
+                <h3>Add movies and shows to your watch list the right way.</h3>
             </div>
         </div>
     );

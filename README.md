@@ -122,9 +122,9 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 * style landing page
 - [x] create landing page image
 - [x] add image to landing page
-- [ ] change landing header one text
-- [ ] add header three
-- [ ] put text next to image
+- [x] change landing header one text
+- [x] add header three
+- [x] put text next to image
 - [ ] update landing image with design elements
 
 
