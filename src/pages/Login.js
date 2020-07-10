@@ -18,7 +18,6 @@ class Login extends React.Component {
 
         UserModel.login(this.state).then(data => {
             console.log(data)
-            TODO
             if (!data.data) {
                 return false
             }

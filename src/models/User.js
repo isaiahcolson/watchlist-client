@@ -1,6 +1,6 @@
 const URL = `http://localhost:3001/auth`;
 
-class User {
+class UserModel {
     static create(data) {
         return fetch(`${URL}/register`, {
             method: "POST",
@@ -29,3 +29,5 @@ class User {
         });
     }
 }
+
+export default UserModel;
