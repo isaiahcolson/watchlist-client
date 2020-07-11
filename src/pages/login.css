@@ -11,7 +11,7 @@
     height: calc(100vh - 60px);
     width: 50vw;
     margin-left: 50vw;
-    background-image: url('/WL-signup-image.png');
+    background-image: url('/WL-login-image.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

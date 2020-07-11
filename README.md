@@ -148,13 +148,14 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] copy signup html layout to login page
 - [x] copy signup css to login css
 - [x] flip image and form content
-- [ ] create differenct image for login, add to login page
-- [ ] test signup and login
+- [x] create differenct image for login, add to login page
+- [x] test signup and login
 
 
 
 * add form validation
 * link titles in titles page to titles show pages
+- [ ] push titles down for now
 * style nav for mobile
 * style landing page for mobile
 
