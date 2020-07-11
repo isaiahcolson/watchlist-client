@@ -127,6 +127,13 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] put text next to image
 - [x] update landing image with design elements
 * style signup page
+- [x] add placeholder image for spacing
+- [x] center form
+- [ ] style input area
+- [ ] style label
+- [ ] style submit button
+- [ ] create signup image
+- [ ] add signup image to signup page
 
 
 

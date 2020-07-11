@@ -10,7 +10,7 @@ const Landing = () => {
                 <img src="WL-landing-image.png" alt="Landing"/>
             </div>
             <div>
-                <h1>Watch Later, Now.</h1>
+                <h1>Grab the Popcorn.</h1>
                 <h3>Add movies and shows to your watch list the right way.</h3>
             </div>
         </div>
