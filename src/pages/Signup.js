@@ -38,12 +38,11 @@ class Signup extends React.Component {
         return(
             <div className="signup-container">
                 <div className="signup-image">
-                    <p>some filler text</p>
-                    <h1>Test</h1>
+                    <h3>Sign Up</h3>
                 </div>
                 <div className="signup-form-container">
                     <div className="signup-form">
-                        <h3>Sign Up</h3>
+                        {/* <h3>Sign Up</h3> */}
                         <form onSubmit={this.handleSubmit}>
                             <h5>First Name</h5>
                             <input onChange={this.handleChange}

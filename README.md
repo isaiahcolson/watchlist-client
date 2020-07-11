@@ -132,9 +132,10 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] style input area
 - [x] style label
 - [x] style submit button
-- [ ] create signup image
-- [ ] add signup image to signup page
+- [x] create signup image
+- [x] add signup image to signup page
 - [ ] fixed navbar and form spacing
+- [ ] add text over signup image
 
 
 
