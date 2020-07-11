@@ -144,10 +144,15 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [X] add overflow scroll for signup form
 - [x] fix signup form vertical responsiveness
 - [x] create new signup image with information, add to signup page, cleanup signup css file
-
-
-
 * style login page
+- [x] copy signup html layout to login page
+- [x] copy signup css to login css
+- [x] flip image and form content
+- [ ] create differenct image for login, add to login page
+- [ ] test signup and login
+
+
+
 * add form validation
 * link titles in titles page to titles show pages
 * style nav for mobile
