@@ -1,4 +1,6 @@
 .navbar {
+    position: fixed;
+    width: calc(100vw - 72px);
     padding: 0 36px;
     background-color: var(--white);
     border-bottom: 1px solid var(--gray);

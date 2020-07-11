@@ -134,7 +134,13 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] style submit button
 - [x] create signup image
 - [x] add signup image to signup page
-- [ ] fixed navbar and form spacing
+- [x] fixed navbar
+- [ ] fix landing page spacing after navbar change
+- [ ] fix landing page vertical responsivness
+
+
+
+- [ ] form spacing
 - [ ] add text over signup image
 
 
