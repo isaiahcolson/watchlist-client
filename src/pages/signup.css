@@ -1,52 +1,32 @@
 .signup-container {
-    /* position: fixed; */
-    /* position: relative; */
-    /* height: calc(100vh - 60px); */
-    /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
-    /* overflow: scroll; */
 }
 
 .signup-image {
     position: fixed;
     top: 60px;
     left: 0;
-    height: 100vh;
+    height: calc(100vh - 60px);
     width: 50vw;
     background-image: url('/WL-signup-image.png');
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
     background-size: cover;
 }
 
 .signup-form-container {
     margin-top: 100px;
-    /* padding-top: 120px; */
-    /* margin-bottom: 82px; */
-    /* margin-left: 50vw; */
-    /* height: calc(100vh - 137px); */
-    /* height: 100vh; */
-    /* width: 50vw; */
-    /* width: 280px; */
     display: flex;
-    /* margin-bottom: 76px; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.signup-form {
-    /* height: 100vh; */
-    /* width: 50vw; */
-    /* overflow: scroll; */
-}
-
 .signup-form form {
     width: 280px;
     margin-left: 50vw;
-    /* margin-top: 70px; */
     margin-bottom: 171px;
 }
 
@@ -69,7 +49,6 @@
     border: 2px solid var(--gray);
     overflow: visible;
     box-sizing: border-box;
-    /* background-color: var(--gray); */
 }
 
 .signup-form button {

@@ -143,8 +143,7 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] add h3 back to signup form, form spacing
 - [X] add overflow scroll for signup form
 - [x] fix signup form vertical responsiveness
-- [ ] create new signup image with information, add to signup page
-- [ ] cleanup signup css file
+- [x] create new signup image with information, add to signup page, cleanup signup css file
 
 
 
