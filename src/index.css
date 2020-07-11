@@ -34,6 +34,7 @@ body {
   box-sizing: border-box;
   font-family: var(--main-font);
   color: var(--black);
+  background-color: var(--white);
 }
 
 h1 {

@@ -9,9 +9,9 @@ const Landing = () => {
             <div className="landing-image">
                 <img src="WL-landing-image.png" alt="Landing"/>
             </div>
-            <div>
+            <div className="landing-content">
                 <h1>Grab the Popcorn.</h1>
-                <h3>Add movies and shows to your watch list the right way.</h3>
+                <h3>Add movies and shows to your watchlist the right way.</h3>
             </div>
         </div>
     );

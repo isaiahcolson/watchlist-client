@@ -1,16 +1,24 @@
 .landing-container {
-    margin: 80px 64px;
+    margin: 60px 64px;
+    margin-top: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .landing-container div {
-    margin: 0 40px;
+    width: 100%;
+    height: auto;
 }
 
-.landing-container img {
-    max-height: calc(100vh - 64px);
+.landing-image img {
+    margin-right: 30px;
+    width: calc(50vw);
+}
+
+.landing-content {
+    margin-left: 30px;
+    width: calc(50vw - 64px);
 }
 
 .landing-container h1 {
