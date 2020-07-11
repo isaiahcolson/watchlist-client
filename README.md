@@ -137,6 +137,9 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] fixed navbar
 - [x] fix landing page spacing after navbar change
 - [x] fix landing page vertical responsivness
+- [x] fix navbar buttons for signup page
+- [ ] fix landing page again, flex should be even
+- [ ] add h3 back to signup form
 
 
 
