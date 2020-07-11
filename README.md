@@ -129,11 +129,12 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 * style signup page
 - [x] add placeholder image for spacing
 - [x] center form
-- [ ] style input area
-- [ ] style label
-- [ ] style submit button
+- [x] style input area
+- [x] style label
+- [x] style submit button
 - [ ] create signup image
 - [ ] add signup image to signup page
+- [ ] fixed navbar and form spacing
 
 
 

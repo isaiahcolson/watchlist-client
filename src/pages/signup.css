@@ -1,12 +1,16 @@
 .signup-container {
-    height: calc(100vh - 60px);
+    position: fixed;
+    /* height: calc(100vh - 60px); */
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: scroll;
 }
 
 .signup-image {
-    height: calc(100vh - 60px);
+    position: fixed;
+    left: 0;
+    height: 100vh;
     width: 50vw;
     background-image: url('/WL-signup-image.png');
     background-repeat: no-repeat;
@@ -14,14 +18,54 @@
     background-size: cover;
 }
 
-.signup-form {
+.signup-form-container {
+    /* height: 80vh; */
+    margin-left: 50vw;
+    height: 100vh;
     width: 50vw;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
 }
 
+.signup-form form {
+    width: 240px;
+}
+
+.signup-form h3 {
+    margin: 0 5px;
+}
+
+.signup-form h5 {
+    margin: 20px 10px 5px 10px;
+}
+
+.signup-form input {
+    width: 100%;
+    font-size: var(--p-size);
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    /* border: 1px solid var(--black); */
+    background-color: var(--gray);
+}
+
 .signup-form button {
+    margin-top: 40px;
+    padding: 7px 14px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--accent1);
+    font-size: var(--p-size);
+    font-weight: var(--h4-weight);
+    transition: 0.3s ease;
+    border: none;
     display: block;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    color: var(--white);
+    background-color: var(--accent1-dark);
 }

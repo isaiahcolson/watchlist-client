@@ -41,46 +41,48 @@ class Signup extends React.Component {
                     <p>some filler text</p>
                     <h1>Test</h1>
                 </div>
-                <div className="signup-form">
-                    <p>Sign Up</p>
-                    <form onSubmit={this.handleSubmit}>
-                        <p>First Name</p>
-                        <input onChange={this.handleChange}
-                        type="text"
-                        id="firstName"
-                        name="firstName"
-                        value={this.state.firstName} />
+                <div className="signup-form-container">
+                    <div className="signup-form">
+                        <h3>Sign Up</h3>
+                        <form onSubmit={this.handleSubmit}>
+                            <h5>First Name</h5>
+                            <input onChange={this.handleChange}
+                            type="text"
+                            id="firstName"
+                            name="firstName"
+                            value={this.state.firstName} />
 
-                        <p>lastName</p>
-                        <input onChange={this.handleChange}
-                        type="text"
-                        id="lastName"
-                        name="lastName"
-                        value={this.state.lastName} />
+                            <h5>Last Name</h5>
+                            <input onChange={this.handleChange}
+                            type="text"
+                            id="lastName"
+                            name="lastName"
+                            value={this.state.lastName} />
 
-                        <p>Username</p>
-                        <input onChange={this.handleChange}
-                        type="text"
-                        id="username"
-                        name="username"
-                        value={this.state.username} />
+                            <h5>Username</h5>
+                            <input onChange={this.handleChange}
+                            type="text"
+                            id="username"
+                            name="username"
+                            value={this.state.username} />
 
-                        <p>Email</p>
-                        <input onChange={this.handleChange}
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={this.state.email} />
+                            <h5>Email</h5>
+                            <input onChange={this.handleChange}
+                            type="email"
+                            id="email"
+                            name="email"
+                            value={this.state.email} />
 
-                        <p>Password</p>
-                        <input onChange={this.handleChange}
-                        type="password"
-                        id="password"
-                        name="password"
-                        value={this.state.password} />
+                            <h5>Password</h5>
+                            <input onChange={this.handleChange}
+                            type="password"
+                            id="password"
+                            name="password"
+                            value={this.state.password} />
 
-                        <button type="submit">Sign Up</button>
-                    </form>
+                            <button type="submit">Sign Up</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         );
