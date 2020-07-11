@@ -43,7 +43,10 @@ class Signup extends React.Component {
                 </div>
                 <div className="signup-form-container">
                     <div className="signup-form">
-                        {/* <h3>Sign Up</h3> */}
+                        <div className="form-header">
+                            <h3>Sign Up</h3>
+                            <h5>Provide us with some of your information to get free access to Watch Later.</h5>
+                        </div>
                         <form onSubmit={this.handleSubmit}>
                             <h5>First Name</h5>
                             <input onChange={this.handleChange}
