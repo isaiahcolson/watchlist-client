@@ -22,7 +22,7 @@
 }
 
 .signup-form-container {
-    margin-left: 50vw;
+    /* margin-left: 50vw; */
     /* height: 100vh; */
     width: 50vw;
     display: flex;
@@ -34,6 +34,7 @@
 
 .signup-form form {
     width: 240px;
+    margin-left: 50vw;
 }
 
 .signup-form h3 {
@@ -56,7 +57,7 @@
 }
 
 .signup-form button {
-    margin-top: 20px;
+    margin-top: 24px;
     padding: 7px 14px;
     border-radius: 5px;
     color: var(--white);
@@ -67,9 +68,30 @@
     border: none;
     display: block;
     cursor: pointer;
+    width: 240px;
 }
 
 .signup-form button:hover {
     color: var(--white);
     background-color: var(--accent1-dark);
+}
+
+.form-footer {
+    position: fixed;
+    margin-left: 50vw;
+    padding: 32px 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    background-color: var(--white);
+    border-top: 1px solid var(--gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-footer a {
+    text-decoration: none;
+    color: var(--accent1);
 }

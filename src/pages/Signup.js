@@ -2,6 +2,7 @@
 import React from 'react';
 import UserModel from '../models/User';
 import './signup.css';
+import { Link } from 'react-router-dom';
 
 // signup page, non-auth users can signup for a new account
 class Signup extends React.Component {
@@ -79,7 +80,10 @@ class Signup extends React.Component {
                             name="password"
                             value={this.state.password} />
 
-                            <button type="submit">Sign Up</button>
+                            <div className="form-footer">
+                                <p>Already have an account? <Link to='/login'>Log In</Link></p>
+                                <button type="submit">Sign Up</button>
+                            </div>
                         </form>
                     </div>
                 </div>
