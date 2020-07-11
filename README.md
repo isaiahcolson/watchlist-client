@@ -136,7 +136,7 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] add signup image to signup page
 - [x] fixed navbar
 - [x] fix landing page spacing after navbar change
-- [ ] fix landing page vertical responsivness
+- [x] fix landing page vertical responsivness
 
 
 

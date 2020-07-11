@@ -6,7 +6,7 @@ import './landing.css';
 const Landing = () => {
     return(
         <div className="landing-container">
-            <div>
+            <div className="landing-image">
                 <img src="WL-landing-image.png" alt="Landing"/>
             </div>
             <div>
