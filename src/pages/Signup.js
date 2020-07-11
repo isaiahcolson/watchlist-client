@@ -39,7 +39,6 @@ class Signup extends React.Component {
         return(
             <div className="signup-container">
                 <div className="signup-image">
-                    <h3>Sign Up</h3>
                 </div>
                 <div className="signup-form-container">
                     <div className="signup-form">

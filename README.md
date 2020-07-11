@@ -141,11 +141,11 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] fix landing page again, flex should be even, nav not full width
 - [x] add form footer section
 - [x] add h3 back to signup form, form spacing
+- [X] add overflow scroll for signup form
 
 
 
-- [ ] add overflow scroll for signup form
-- [ ] add text over signup image
+- [ ] create new signup image with information, add to signup page
 
 
 
