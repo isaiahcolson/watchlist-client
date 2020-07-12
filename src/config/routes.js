@@ -6,6 +6,7 @@ import Landing from '../pages/Landing';
 import Login from '../pages/Login';
 import Profile from '../pages/Profile';
 import Signup from '../pages/Signup';
+import TitleShow from '../pages/TitleShow';
 
 // routes
 function Routes(props) {
@@ -21,6 +22,7 @@ function Routes(props) {
                     storeUser={props.storeUser}
                 />
             }} />
+            <Route path='/titles/:id' component={TitleShow} />
             <Route path='/titles' component={Home} />
             <Route path='/profile' component={Profile} />
         </Switch>

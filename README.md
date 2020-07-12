@@ -154,7 +154,7 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] push titles down, set title cards as links to show pages
 - [x] create show page
 - [x] add show function to Title model
-- [ ] add show routes to routes config
+- [x] add show routes to routes config
 - [ ] add show route to controllers
 
 
