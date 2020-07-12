@@ -80,3 +80,28 @@ p {
 }
 
 /* Media Queries */
+@media screen and (max-width: 360px) {
+  h1 {
+    font-size: calc(var(--h1-size) * .9);
+  }
+  
+  h2 {
+    font-size: calc(var(--h2-size) * .9);
+  }
+  
+  h3 {
+    font-size: calc(var(--h3-size) * .9);
+  }
+  
+  h4 {
+    font-size: calc(var(--h4-size) * .9);
+  }
+  
+  h5 {
+    font-size: calc(var(--h5-size) * .9);
+  }
+  
+  p {
+    font-size: calc(var(--p-size) * .9);
+  }
+}
