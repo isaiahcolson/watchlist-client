@@ -157,10 +157,10 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] add show routes to routes config
 - [x] link titles in titles page to titles show pages
 * style nav for mobile
-
-
-
 * style landing for mobile
+
+
+
 * style signup for mobile
 * style login for mobile
 
