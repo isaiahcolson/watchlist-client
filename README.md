@@ -156,21 +156,22 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] add show function to Title model
 - [x] add show routes to routes config
 - [x] link titles in titles page to titles show pages
+* style nav for mobile
 
 
 
+* style landing for mobile
+* style signup for mobile
+* style login for mobile
+
+### Phase 3 (Mon Jul 13 - Tue Jul 14)
+* hide pages to unauthenticated users
+- [ ] for page gatekeeping, add props.currentUser in routes for pages that I want hidden, like how we did for the navbar
 * add form validation
 - [ ] add submit button disabled styling
 - [ ] add submit button logic
 - [ ] add signup error messages for invalid fields
 - [ ] add login error messages for invalid fields
-* style nav for mobile
-- [ ] test mobile css inside of navbar file with media query, or add media query into css file
-* style landing page for mobile
-
-### Phase 3 (Mon Jul 13 - Tue Jul 14)
-* hide pages to unauthenticated users
-- [ ] for page gatekeeping, add props.currentUser in routes for pages that I want hidden, like how we did for the navbar
 * user can click title on titles page and add to their watchlist
 * show watchlist with user's titles on profile page
 * style account info section of profile page
@@ -187,6 +188,10 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 * create show page for titles
 * section by type on titles page
 * user can create multiple lists
+* style nav for 4k
+* style landing for 4k
+* style signup for 4k
+* style login for 4k
 
 
 

@@ -1,9 +1,7 @@
 header {
     position: fixed;
     top: 0;
-    /* right: 0; */
     width: 100%;
-    /* max-width: 100vw; */
     background-color: var(--white);
     border-bottom: 1px solid var(--gray);
     z-index: 2;
@@ -48,4 +46,31 @@ header {
 .right-nav .signup-button:hover {
     color: var(--white);
     background-color: var(--accent1-dark);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 0 27px;
+    }
+    
+    .navbar img {
+        margin: 15px 0;
+        height: 35px;
+    }
+    
+    .navbar a {
+        margin: 0 14px;
+        font-size: calc(var(--h4-size) * .9);
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .navbar {
+        padding: 0 18px;
+    }
+    
+    .navbar a {
+        margin: 0 10px;
+    }
 }
