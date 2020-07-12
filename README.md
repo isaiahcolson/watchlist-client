@@ -112,80 +112,39 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 * go through code, clean out unused comments and add helpful ones, remove tasks
 
 ### Phase 2 (Fri Jul 10 - Sun Jul 12)
-* style nav
-- [x] import font
-- [x] setup css variables
-- [x] position links
-- [x] create logo
-- [x] add logo to navbar
-- [x] color sign up and profile links
-* style landing page
-- [x] create landing page image
-- [x] add image to landing page
-- [x] change landing header one text
-- [x] add header three
-- [x] put text next to image
-- [x] update landing image with design elements
-* style signup page
-- [x] add placeholder image for spacing
-- [x] center form
-- [x] style input area
-- [x] style label
-- [x] style submit button
-- [x] create signup image
-- [x] add signup image to signup page
-- [x] fixed navbar
-- [x] fix landing page spacing after navbar change
-- [x] fix landing page vertical responsivness
-- [x] fix navbar buttons for signup page
-- [x] fix landing page again, flex should be even, nav not full width
-- [x] add form footer section
-- [x] add h3 back to signup form, form spacing
-- [X] add overflow scroll for signup form
-- [x] fix signup form vertical responsiveness
-- [x] create new signup image with information, add to signup page, cleanup signup css file
-* style login page
-- [x] copy signup html layout to login page
-- [x] copy signup css to login css
-- [x] flip image and form content
-- [x] create differenct image for login, add to login page
-- [x] test signup and login
-* link titles in titles page to titles show pages
-- [x] push titles down, set title cards as links to show pages
-- [x] create show page
-- [x] add show function to Title model
-- [x] add show routes to routes config
-- [x] link titles in titles page to titles show pages
+* style nav, create logo
+* style landing page, create landing page image
+* style signup page, style input area, create signup image
+* style login page, flip image and form content, create differenct image for login, add to login page
+* link titles in titles page to titles show pages, create show page
 * style nav for mobile
 * style landing for mobile, add call to action
 * style signup for mobile
-
-
-
 * style login for mobile
 
 ### Phase 3 (Mon Jul 13 - Tue Jul 14)
 * hide pages to unauthenticated users
 - [ ] for page gatekeeping, add props.currentUser in routes for pages that I want hidden, like how we did for the navbar
-* add form validation
-- [ ] add submit button disabled styling
-- [ ] add submit button logic
-- [ ] add signup error messages for invalid fields
-- [ ] add login error messages for invalid fields
 * user can click title on titles page and add to their watchlist
 * show watchlist with user's titles on profile page
 * style account info section of profile page
 * style watchlist section of profile page
+* style show page for titles
+* increase seeded data to 25 movies and 25 shows
 
 ### Phase 4 (Wed Jul 15 - Thur Jul 16)
 * user can manually order their watchlist
 * style titles page
 * section by genre on titles page
 * add 404 catch route
+* add form validation
+- [ ] add submit button disabled styling
+- [ ] add submit button logic
+- [ ] add signup error messages for invalid fields
+- [ ] add login error messages for invalid fields
 
 ### Stretch
 * user can edit their account
-* create show page for titles
 * section by type on titles page
 * user can create multiple lists
 * style nav for 4k
