@@ -1,13 +1,17 @@
 // imports
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 // component that renders title data
 const TitleCard = (props) => {
-    const {name} = props.title;
+    const {name, _id} = props.title;
+    
     return(
-        <div>
-            <p>{name}</p>
-        </div>
+        <Link to={`/titles/${_id}`}>
+            <div>
+                <p>{name}</p>
+            </div>
+        </Link>
     )
 }
 

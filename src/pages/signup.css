@@ -71,6 +71,11 @@
     background-color: var(--accent1-dark);
 }
 
+.signup-form button:disabled {
+    background-color: var(--accent1-light);
+    cursor: default;
+}
+
 .form-header {
     margin-left: 50vw;
     margin-bottom: 32px;

@@ -49,41 +49,41 @@ class Signup extends React.Component {
                         <form onSubmit={this.handleSubmit}>
                             <h5>First Name</h5>
                             <input onChange={this.handleChange}
-                            type="text"
+                            type="text" required
                             id="firstName"
                             name="firstName"
                             value={this.state.firstName} />
 
                             <h5>Last Name</h5>
                             <input onChange={this.handleChange}
-                            type="text"
+                            type="text" required
                             id="lastName"
                             name="lastName"
                             value={this.state.lastName} />
 
                             <h5>Username</h5>
                             <input onChange={this.handleChange}
-                            type="text"
+                            type="text" required
                             id="username"
                             name="username"
                             value={this.state.username} />
 
                             <h5>Email</h5>
                             <input onChange={this.handleChange}
-                            type="email"
+                            type="email" required
                             id="email"
                             name="email"
                             value={this.state.email} />
 
                             <h5>Password</h5>
                             <input onChange={this.handleChange}
-                            type="password"
+                            type="password" required
                             id="password"
                             name="password"
                             value={this.state.password} />
 
                             <div className="form-footer">
-                                <button type="submit">Sign Up</button>
+                                <button type="submit" disabled>Sign Up</button>
                                 <p>Already have an account? <Link to='/login'>Log In</Link></p>
                             </div>
                         </form>

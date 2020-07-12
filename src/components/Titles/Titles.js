@@ -1,6 +1,7 @@
 // imports
 import React from 'react';
 import TitleCard from './TitleCard';
+import './Titles.css';
 
 // component that generates all titles in database
 const Titles = (props) => {
@@ -11,7 +12,7 @@ const Titles = (props) => {
     }
 
     return(
-        <div>
+        <div className="titles-container">
             {generateTitles(props.data)}
         </div>
     );

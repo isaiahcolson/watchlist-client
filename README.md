@@ -111,7 +111,7 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 * ref Watchlist model to User model, ref Title model to Watchlist model
 * go through code, clean out unused comments and add helpful ones, remove tasks
 
-### Phase 2 (Fri Jul 10 - Mon Jul 13)
+### Phase 2 (Fri Jul 10 - Sun Jul 12)
 * style nav
 - [x] import font
 - [x] setup css variables
@@ -150,17 +150,24 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] flip image and form content
 - [x] create differenct image for login, add to login page
 - [x] test signup and login
+* link titles in titles page to titles show pages
+- [x] push titles down, set title cards as links to show pages
+- [ ] create show page that just has title name for now
 
 
 
 * add form validation
-* link titles in titles page to titles show pages
-- [ ] push titles down for now
+- [ ] add submit button disabled styling
+- [ ] add submit button logic
+- [ ] add signup error messages for invalid fields
+- [ ] add login error messages for invalid fields
 * style nav for mobile
+- [ ] test mobile css inside of navbar file with media query, or add media query into css file
 * style landing page for mobile
 
 ### Phase 3 (Mon Jul 13 - Tue Jul 14)
 * hide pages to unauthenticated users
+- [ ] for page gatekeeping, add props.currentUser in routes for pages that I want hidden, like how we did for the navbar
 * user can click title on titles page and add to their watchlist
 * show watchlist with user's titles on profile page
 * style account info section of profile page
@@ -178,9 +185,10 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 * section by type on titles page
 * user can create multiple lists
 
+
+
 - [ ] add react flowchart to ERD picture
 - [ ] in back end in signup route, db.Watchlist.create a default Watchlist and set user id to token, this will give a default watchlist for the user
-- [ ] for page gatekeeping, add props.currentUser in routes for pages that I want hidden, like how we did for the navbar
 - [ ] setup Watchlist show route
 - [ ] setup Watchlist update route
 - [ ] setup Watchlist delete route
