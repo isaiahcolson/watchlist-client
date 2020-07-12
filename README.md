@@ -158,10 +158,10 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] link titles in titles page to titles show pages
 * style nav for mobile
 * style landing for mobile, add call to action
-
-
-
 * style signup for mobile
+
+
+
 * style login for mobile
 
 ### Phase 3 (Mon Jul 13 - Tue Jul 14)

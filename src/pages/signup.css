@@ -105,3 +105,26 @@
     text-decoration: none;
     color: var(--accent1);
 }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .signup-image {
+        display: none;
+    }
+    
+    .signup-form form {
+        margin-left: 0;
+    }
+    
+    .form-header {
+        margin-left: 0;
+        margin-bottom: 32px;
+        width: 280px;
+    }
+    
+    .form-footer {
+        position: fixed;
+        margin-left: 0;
+        width: 100%;
+    }
+}
