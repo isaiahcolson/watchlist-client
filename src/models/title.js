@@ -6,6 +6,10 @@ class TitleModel {
     static all = () => {
         return fetch(URL).then((response) => response.json());
     }
+
+    static show = (titleId) => {
+        return fetch(`${URL}/${titleId}`).then((response) => response.json());
+    }
 }
 
 // exports
