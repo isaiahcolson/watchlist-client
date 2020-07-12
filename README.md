@@ -152,7 +152,8 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] test signup and login
 * link titles in titles page to titles show pages
 - [x] push titles down, set title cards as links to show pages
-- [ ] create show page that just has title name for now
+- [x] create show page
+- [ ] add show function to Title model
 
 
 
