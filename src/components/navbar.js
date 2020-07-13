@@ -11,7 +11,7 @@ const Navbar = (props) => {
                 <div className="navbar">
                     <NavLink to='/titles'><img src="WL-logo.png" alt="Watch Later Logo"/></NavLink>
                     <div className="right-nav">
-                        <NavLink to='/watchlist'>Watchlist</NavLink>
+                        <NavLink to='/watchlists'>Watchlist</NavLink>
                         <NavLink to='/profile'>Profile</NavLink>
                         {/* <a href='/logout' onClick={props.logout}>Log Out</a> */}
                     </div>

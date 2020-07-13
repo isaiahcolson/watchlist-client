@@ -31,7 +31,7 @@ class Profile extends React.Component {
                         <p>{this.state.user.email}</p>
                         <p>Movies in watchlist: </p>
                         <p>Shows in watchlist: </p>
-                        <Link to='/watchlist'>Watchlist</Link>
+                        <Link to={`/watchlists/${this.state.user.watchlists[0]}`}>Watchlist</Link>
                         <a href='/logout' onClick={this.props.logout}>Log Out</a>
                         <Link to='/profile'>Delete Account</Link>
                     </div>

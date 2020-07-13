@@ -134,7 +134,12 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] add the remaining user info
 * create watchlist page
 - [x] create new route for watchlist with boilerplate JSX
-- [ ] in back end in signup route, db.Watchlist.create a default Watchlist and set user id to token, this will give a default watchlist for the user
+- [x] in back end in signup route, db.Watchlist.create a default Watchlist and set user id to token, this will give a default watchlist for the user
+- [x] reference express blog
+- [x] create watchlist show route
+- [x] add watchlist to models
+- [x] create watchlist card component
+- [ ] add title info to watchlist card
 
 
 
@@ -175,6 +180,7 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 
 * hide pages to unauthenticated users
 - [ ] for page gatekeeping, add props.currentUser in routes for pages that I want hidden, like how we did for the navbar
+- [ ] fix nav if token has expired
 
 ### Phase 4 (Wed Jul 15 - Thur Jul 16)
 * user can manually order their watchlist

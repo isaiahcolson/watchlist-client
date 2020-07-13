@@ -1,13 +1,15 @@
 // imports
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {withRouter} from 'react-router-dom';
 import Navbar from './components/navbar';
 import Routes from './config/routes';
+import UserModel from './models/User';
 import './App.css';
 
 // primary component
 function App(props) {
   const [currentUser, setCurrentUser] = useState(localStorage.getItem('uid'));
+  const [userData, setUserData] = useState(null);
 
   const storeUser = (userId) => {
     setCurrentUser(userId);
@@ -21,10 +23,16 @@ function App(props) {
     props.history.push('/login');
   }
 
+  useEffect(function() {
+    UserModel.profile(currentUser).then((json) => {
+      setUserData(json.user);
+    });
+  });
+
   return(
     <div>
       <Navbar currentUser={currentUser} />
-      <Routes currentUser={currentUser} logout={logout} storeUser={storeUser} />
+      <Routes userData={userData} currentUser={currentUser} logout={logout} storeUser={storeUser} />
     </div>
   );
 }

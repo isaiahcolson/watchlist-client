@@ -83,7 +83,7 @@ class Signup extends React.Component {
                             value={this.state.password} />
 
                             <div className="form-footer">
-                                <button type="submit" disabled>Sign Up</button>
+                                <button type="submit">Sign Up</button>
                                 <p>Already have an account? <Link to='/login'>Log In</Link></p>
                             </div>
                         </form>

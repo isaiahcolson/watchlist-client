@@ -23,7 +23,14 @@ function Routes(props) {
                     storeUser={props.storeUser}
                 />
             }} />
-            <Route path='/titles/:id' component={TitleShow} />
+            <Route path='/titles/:id'
+            render={(routeComponentProps) => {
+                return <TitleShow 
+                    { ...routeComponentProps }
+                    userData={props.userData}
+                />
+            }}
+            />
             <Route path='/titles' component={Home} />
             {/* <Route path='/profile' component={Profile} currentUser={props.currentUser} /> */}
             <Route path='/profile'
@@ -34,7 +41,14 @@ function Routes(props) {
                     logout={props.logout}
                 />
             }} />
-            <Route path='/watchlist' component={Watchlist} />
+            <Route path='/watchlists/:id'
+            render={(routeComponentProps) => {
+                return <Watchlist 
+                    { ...routeComponentProps }
+                    userData={props.userData}
+                />
+            }}
+            />
         </Switch>
     );
 }
