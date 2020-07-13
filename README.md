@@ -123,14 +123,69 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 * style login for mobile
 
 ### Phase 3 (Mon Jul 13 - Tue Jul 14)
+* redo profile wireframe
+- [x] change navbar for users to show watchlist and profile
+- [x] update typography sheet with new sizes
+* show user profile name on profile page
+- [x] push everything down for now
+- [ ] show user name
+- [ ] move logout button to profile page
+
+
+
+
+
+* create watchlist page
+- [ ] in back end in signup route, db.Watchlist.create a default Watchlist and set user id to token, this will give a default watchlist for the user
+
+
+
+
+
+* user can click title on titles page and add to their watchlist
+
+
+
+
+
+* update watchlist with user's titles
+
+
+
+
+
+* style account info section of profile page
+
+
+
+
+
+* style watchlist section of profile page
+
+
+
+
+
+* increase seeded data to 25 movies and 25 shows
+
+
+
+
+
+* add wireframe for titles show page
+
+
+
+
+
+* style titles show page
+
+
+
+
+
 * hide pages to unauthenticated users
 - [ ] for page gatekeeping, add props.currentUser in routes for pages that I want hidden, like how we did for the navbar
-* user can click title on titles page and add to their watchlist
-* show watchlist with user's titles on profile page
-* style account info section of profile page
-* style watchlist section of profile page
-* style show page for titles
-* increase seeded data to 25 movies and 25 shows
 
 ### Phase 4 (Wed Jul 15 - Thur Jul 16)
 * user can manually order their watchlist
@@ -142,24 +197,28 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [ ] add submit button logic
 - [ ] add signup error messages for invalid fields
 - [ ] add login error messages for invalid fields
+* final touches
+- [ ] add react flowchart to ERD picture
+- [ ] change favicon
+- [ ] update README with new wireframes
+- [ ] update README with final design assets
+* deploy project
 
 ### Stretch
+* add button on title card that will add or remove titles from watchlist
 * user can edit their account
+* add profile photo for user
 * section by type on titles page
-* user can create multiple lists
+* style profile page for mobile
+* style titles show page for mobile
 * style nav for 4k
 * style landing for 4k
 * style signup for 4k
 * style login for 4k
-
-
-
-- [ ] add react flowchart to ERD picture
-- [ ] in back end in signup route, db.Watchlist.create a default Watchlist and set user id to token, this will give a default watchlist for the user
+* user can create multiple lists
 - [ ] setup Watchlist show route
 - [ ] setup Watchlist update route
 - [ ] setup Watchlist delete route
 - [ ] setup Watchlist create route
-- [ ] change favicon
 
 <!-- Here is the link for github README markdown https://guides.github.com/features/mastering-markdown/ -->

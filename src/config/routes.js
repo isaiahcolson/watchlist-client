@@ -24,7 +24,15 @@ function Routes(props) {
             }} />
             <Route path='/titles/:id' component={TitleShow} />
             <Route path='/titles' component={Home} />
-            <Route path='/profile' component={Profile} />
+            {/* <Route path='/profile' component={Profile} currentUser={props.currentUser} /> */}
+            <Route path='/profile'
+            render={(routeComponentProps) => {
+                return <Profile 
+                    { ...routeComponentProps }
+                    currentUser={props.currentUser}
+                    logout={props.logout}
+                />
+            }} />
         </Switch>
     );
 }

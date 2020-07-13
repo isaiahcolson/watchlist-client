@@ -22,6 +22,15 @@ class UserModel {
             body: JSON.stringify(credentials)
         }).then(res => res.json());
     }
+
+    static profile(data) {
+        return fetch(`${URL}/profile`, {
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        })
+    }
 }
 
 // exports
