@@ -3,9 +3,11 @@ import React from 'react';
 
 // component that renders watchlist titles
 const WatchlistCard = (props) => {
+    const {name} = props.title;
+
     return(
         <div>
-            <p>Testing watchlist titles component.</p>
+            <p>{name}</p>
         </div>
     );
 }

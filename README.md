@@ -139,18 +139,11 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] create watchlist show route
 - [x] add watchlist to models
 - [x] create watchlist card component
-- [ ] add title info to watchlist card
-
-
-
 * user can click title on titles show page and add to their watchlist
 - [x] add button to title show page
-- [ ] add watchlist create route?
-
-
-
-* update watchlist with user's titles
-- [ ] show title name on watchlist
+- [x] add watchlist put route, test put route in insomnia, user should be able to add title id to watchlist id
+- [x] add title info to watchlist card, show title name on watchlist
+- [ ] link add button on title show page to put route
 
 
 
@@ -180,6 +173,7 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 
 * hide pages to unauthenticated users
 - [ ] for page gatekeeping, add props.currentUser in routes for pages that I want hidden, like how we did for the navbar
+- [ ] change navbar watchlist link to hold user info
 - [ ] fix nav if token has expired
 
 ### Phase 4 (Wed Jul 15 - Thur Jul 16)
