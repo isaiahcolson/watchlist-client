@@ -23,7 +23,10 @@ class TitleShow extends React.Component {
         return(
             <div className="titleshow-container">
                 {this.state.title ? (
-                    <h1>{this.state.title.name}</h1>
+                    <div>
+                        <h1>{this.state.title.name}</h1>
+                        <button>Add</button>
+                    </div>
                 ) : (
                     <h1>Loading...</h1>
                 )}

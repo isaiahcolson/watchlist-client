@@ -7,6 +7,7 @@ import Login from '../pages/Login';
 import Profile from '../pages/Profile';
 import Signup from '../pages/Signup';
 import TitleShow from '../pages/TitleShow';
+import Watchlist from '../pages/Watchlist';
 
 // routes
 function Routes(props) {
@@ -33,6 +34,7 @@ function Routes(props) {
                     logout={props.logout}
                 />
             }} />
+            <Route path='/watchlist' component={Watchlist} />
         </Switch>
     );
 }

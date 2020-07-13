@@ -26,10 +26,10 @@ class UserModel {
     static profile(data) {
         return fetch(`${URL}/profile`, {
             headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-        })
+                "Content-Type": "application/json",
+                "authorization": `bearer ${localStorage.getItem('uid')}`
+            }
+        }).then(res => res.json());
     }
 }
 

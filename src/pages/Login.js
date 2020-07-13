@@ -24,7 +24,7 @@ class Login extends React.Component {
                 return false
             }
             this.props.storeUser(data.token);
-            this.props.history.push('/profile');
+            this.props.history.push('/watchlist');
         }).catch(err => console.log(err));
     }
 

@@ -126,37 +126,34 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 * redo profile wireframe
 - [x] change navbar for users to show watchlist and profile
 - [x] update typography sheet with new sizes
-* show user profile name on profile page
+* show user info on profile page
 - [x] push everything down for now
-- [ ] show user name
-- [ ] move logout button to profile page
-
-
-
-
-
+- [x] move logout button to profile page
+- [x] add link to watchlist page
+- [x] show user name on profile page
+- [x] add the remaining user info
 * create watchlist page
+- [x] create new route for watchlist with boilerplate JSX
 - [ ] in back end in signup route, db.Watchlist.create a default Watchlist and set user id to token, this will give a default watchlist for the user
 
 
 
-
-
-* user can click title on titles page and add to their watchlist
-
-
+* user can click title on titles show page and add to their watchlist
+- [x] add button to title show page
+- [ ] add watchlist create route?
 
 
 
 * update watchlist with user's titles
+- [ ] show title name on watchlist
 
 
 
-
-
-* style account info section of profile page
-
-
+* style profile page
+- [ ] add update route for profile
+- [ ] add delete route for profile
+- [ ] add count for user's movies
+- [ ] add count for user's shows
 
 
 
@@ -164,11 +161,7 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 
 
 
-
-
 * increase seeded data to 25 movies and 25 shows
-
-
 
 
 
@@ -176,11 +169,7 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 
 
 
-
-
 * style titles show page
-
-
 
 
 
