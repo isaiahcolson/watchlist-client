@@ -149,7 +149,11 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] add posterImage, timeLength, storyline, mpaaRating to title model
 - [x] reseed data
 - [x] show all needed pieces on screen
-
+- [x] position elements in place, fix preferred styling
+* user can remove title from watchlist
+- [x] add remove route
+- [ ] add remove button on title show page
+- [ ] replace add button with remove button if watchlist has title in it
 
 
 * style profile page
@@ -173,9 +177,9 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [ ] for page gatekeeping, add props.currentUser in routes for pages that I want hidden, like how we did for the navbar
 - [ ] change navbar watchlist link to hold user info
 - [ ] fix nav if token has expired
+- [ ] adjust images on title show page
 
 ### Phase 4 (Wed Jul 15 - Thur Jul 16)
-* user can remove title from watchlist
 * user can manually order their watchlist
 * style titles page
 * section by genre on titles page

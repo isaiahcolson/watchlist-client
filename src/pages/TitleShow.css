@@ -23,5 +23,60 @@
 }
 
 .title-info {
-    margin: 48px 302px;
+    margin-top: 48px;
+    margin-left: 302px;
+}
+
+.title-info__header {
+    display: flex;
+    align-items: center;
+}
+
+.title-info__header h2 {
+    margin-right: 48px;
+    font-weight: 500;
+}
+
+.title-info__header i {
+    font-size: 20px;
+    color: var(--accent2);
+}
+
+.title-info__header button i {
+    color: var(--accent1);
+    font-size: 24px;
+    transition: 0.3s ease;
+}
+
+.title-info button {
+    border: none;
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.title-info__header button i:hover {
+    color: var(--accent1-dark);
+}
+
+.title-info__sub {
+    margin-top: 32px;
+    font-weight: 500;
+    color: var(--gray-dark);
+}
+
+.title-info__stats {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.title-info__stats p {
+    margin-right: 32px;
+}
+
+.title-content {
+    margin: 48px 72px;
+}
+
+.title-content p {
+    margin: 16px 0;
 }

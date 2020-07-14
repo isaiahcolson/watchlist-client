@@ -1,6 +1,6 @@
 // imports
 import React from 'react';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import TitleModel from '../models/title';
 import UserModel from '../models/User';
 import WatchlistModel from '../models/Watchlist';
@@ -39,6 +39,10 @@ class TitleShow extends React.Component {
         });
     }
 
+    removeTitle = (event) => {
+        event.preventDefault()
+    }
+
     render() {
         return(
             <div className="title-container">
@@ -53,11 +57,11 @@ class TitleShow extends React.Component {
                         <div className="title-info">
                             <div className="title-info__header">
                                 <h2>{this.state.title.name}</h2>
-                                <h2>{this.state.title.rating}</h2>
+                                <h2>{this.state.title.rating}<i className="fas fa-star"></i></h2>
                                 {this.state.user ?
                                     <div>
-                                        <Link to={`/watchlists/${this.state.user.watchlists[0]}/add`}>Add</Link>
-                                        <button onClick={this.addTitle}>Add</button>
+                                        <button onClick={this.addTitle}><i className="fas fa-plus-circle"></i></button>
+                                        <button onClick={this.removeTitle}>Remove</button>
                                     </div>
                                 :
                                     <p>Loading...</p>
@@ -69,7 +73,7 @@ class TitleShow extends React.Component {
                                     <p>{this.state.title.mpaaRating}</p>
                                     <p>{this.state.title.timeLength}</p>
                                 </div>
-                                <p>{this.state.title.genres}</p>
+                                <p>{this.state.title.genres[0] + ", " + this.state.title.genres[1] + ", " + this.state.title.genres[2]}</p>
                             </div>
                         </div>
                         <div className="title-content">
