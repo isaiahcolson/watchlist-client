@@ -8,9 +8,15 @@ class Watchlist {
     }
 
     static update = (watchlistId, titleId) => {
-        console.log(watchlistId);
-        console.log(titleId);
         return fetch(`${URL}/${watchlistId}/add`, {
+            method: "PUT",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({title: titleId})
+        }).then((res) => res.json());
+    }
+
+    static updateRemove = (watchlistId, titleId) => {
+        return fetch(`${URL}/${watchlistId}/remove`, {
             method: "PUT",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({title: titleId})

@@ -49,6 +49,14 @@ function Routes(props) {
                 />
             }}
             />
+            <Route path='/watchlists/:id/remove'
+            render={(routeComponentProps) => {
+                return <Watchlist 
+                    { ...routeComponentProps }
+                    userData={props.userData}
+                />
+            }}
+            />
             <Route path='/watchlists/:id'
             render={(routeComponentProps) => {
                 return <Watchlist 

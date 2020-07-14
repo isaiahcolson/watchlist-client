@@ -31,7 +31,7 @@ function App(props) {
 
   return(
     <div>
-      <Navbar currentUser={currentUser} />
+      <Navbar userData={userData} currentUser={currentUser} />
       <Routes userData={userData} currentUser={currentUser} logout={logout} storeUser={storeUser} />
     </div>
   );

@@ -10,7 +10,8 @@ import './TitleShow.css';
 class TitleShow extends React.Component {
     state = {
         title: null,
-        user: null
+        user: null,
+        add: true
     }
 
     componentDidMount() {
@@ -35,12 +36,16 @@ class TitleShow extends React.Component {
         event.preventDefault()
         WatchlistModel.update(this.state.user.watchlists[0], this.state.title._id)
         .then((json) => {
-            console.log(json);               
+            this.setState({add: true});             
         });
     }
 
     removeTitle = (event) => {
         event.preventDefault()
+        WatchlistModel.updateRemove(this.state.user.watchlists[0], this.state.title._id)
+        .then((json) => {
+            this.setState({add: false});              
+        });
     }
 
     render() {
@@ -49,6 +54,7 @@ class TitleShow extends React.Component {
                 {this.state.title ? (
                     <div>
                         <div className="title-coverImage">
+                            <img src="/WL-titleshow-cover.png" alt="Title Cover"/>
                             <img src={this.state.title.coverImage} alt={this.state.title.name}/>
                         </div>
                         <div className="title-posterImage">
@@ -60,8 +66,11 @@ class TitleShow extends React.Component {
                                 <h2>{this.state.title.rating}<i className="fas fa-star"></i></h2>
                                 {this.state.user ?
                                     <div>
-                                        <button onClick={this.addTitle}><i className="fas fa-plus-circle"></i></button>
-                                        <button onClick={this.removeTitle}>Remove</button>
+                                        {this.state.add ?
+                                            <button onClick={this.removeTitle}><i className="fas fa-minus-circle"></i></button>
+                                        :
+                                            <button onClick={this.addTitle}><i className="fas fa-plus-circle"></i></button>
+                                        }
                                     </div>
                                 :
                                     <p>Loading...</p>
@@ -88,6 +97,7 @@ class TitleShow extends React.Component {
                 ) : (
                     <h1>Loading...</h1>
                 )}
+                <div className="underlay"></div>
             </div>
         );
     }

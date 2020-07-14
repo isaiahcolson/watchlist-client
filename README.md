@@ -152,8 +152,13 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] position elements in place, fix preferred styling
 * user can remove title from watchlist
 - [x] add remove route
-- [ ] add remove button on title show page
+- [x] add remove button on title show page
 - [ ] replace add button with remove button if watchlist has title in it
+
+
+
+* change navbar watchlist link to user's watchlist
+
 
 
 * style profile page
@@ -164,7 +169,7 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 
 
 
-* style watchlist section of profile page
+* style watchlist page
 
 
 
