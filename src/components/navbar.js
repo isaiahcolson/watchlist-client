@@ -27,7 +27,7 @@ class Navbar extends React.Component {
                     <div className="navbar">
                         <NavLink to='/titles'><img src="WL-logo.png" alt="Watch Later Logo"/></NavLink>
                         <div className="right-nav">
-                        <NavLink to={`/watchlists/${this.state.user.watchlists[0]}`}>Watchlist</NavLink>
+                        <NavLink to={`/watchlists/${this.state.user.watchlists[0]._id}`}>Watchlist</NavLink>
                             <NavLink to='/profile'>Profile</NavLink>
                             {/* <a href='/logout' onClick={props.logout}>Log Out</a> */}
                         </div>

@@ -16,25 +16,23 @@ class TitleShow extends React.Component {
 
     componentDidMount() {
         this.fetchData();
-        this.fetchUserData();
-        // console.log(this.props.userData);
     }
 
     fetchData = () => {
         TitleModel.show(this.props.match.params.id).then((json) => {
-            this.setState({title: json.title});
+            this.setState({title: json.title}, this.fetchUserData);
         });
     }
 
     fetchUserData = () => {
         UserModel.profile(this.props.currentUser).then((json) => {
-            this.setState({user: json.user});
+            this.setState({user: json.user, add: json.user.watchlists[0].titles.includes(this.state.title._id)});
         });
     }
 
     addTitle = (event) => {
         event.preventDefault()
-        WatchlistModel.update(this.state.user.watchlists[0], this.state.title._id)
+        WatchlistModel.update(this.state.user.watchlists[0]._id, this.state.title._id)
         .then((json) => {
             this.setState({add: true});             
         });
@@ -42,7 +40,7 @@ class TitleShow extends React.Component {
 
     removeTitle = (event) => {
         event.preventDefault()
-        WatchlistModel.updateRemove(this.state.user.watchlists[0], this.state.title._id)
+        WatchlistModel.updateRemove(this.state.user.watchlists[0]._id, this.state.title._id)
         .then((json) => {
             this.setState({add: false});              
         });
