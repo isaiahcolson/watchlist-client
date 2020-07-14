@@ -143,7 +143,12 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] add button to title show page
 - [x] add watchlist put route, test put route in insomnia, user should be able to add title id to watchlist id
 - [x] add title info to watchlist card, show title name on watchlist
-- [ ] link add button on title show page to put route
+- [x] link add button on title show page to put route
+* add wireframe for titles show page
+* style titles show page
+- [x] add posterImage, timeLength, storyline, mpaaRating to title model
+- [x] reseed data
+- [x] show all needed pieces on screen
 
 
 
@@ -163,13 +168,6 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 
 
 
-* add wireframe for titles show page
-
-
-
-* style titles show page
-
-
 
 * hide pages to unauthenticated users
 - [ ] for page gatekeeping, add props.currentUser in routes for pages that I want hidden, like how we did for the navbar
@@ -177,9 +175,11 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [ ] fix nav if token has expired
 
 ### Phase 4 (Wed Jul 15 - Thur Jul 16)
+* user can remove title from watchlist
 * user can manually order their watchlist
 * style titles page
 * section by genre on titles page
+* user can add titles from titles page
 * add 404 catch route
 * add form validation
 - [ ] add submit button disabled styling
@@ -187,6 +187,7 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [ ] add signup error messages for invalid fields
 - [ ] add login error messages for invalid fields
 * final touches
+- [ ] update yellow color in color palette
 - [ ] add react flowchart to ERD picture
 - [ ] change favicon
 - [ ] update README with new wireframes
@@ -211,3 +212,19 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [ ] setup Watchlist create route
 
 <!-- Here is the link for github README markdown https://guides.github.com/features/mastering-markdown/ -->
+
+<!-- Seeded Data Templage -->
+<!-- 
+    {
+        "name": "",
+        "rating": ,
+        "releaseYear": ,
+        "mpaaRating": "",
+        "timeLength": "",
+        "mediaType": "",
+        "posterImage": "",
+        "coverImage": "",
+        "genres": [],
+        "storyline": ""
+    },
+ -->

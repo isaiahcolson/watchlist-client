@@ -6,6 +6,16 @@ class Watchlist {
     static show = (watchlistId) => {
         return fetch(`${URL}/${watchlistId}`).then((response) => response.json());
     }
+
+    static update = (watchlistId, titleId) => {
+        console.log(watchlistId);
+        console.log(titleId);
+        return fetch(`${URL}/${watchlistId}/add`, {
+            method: "PUT",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({title: titleId})
+        }).then((res) => res.json());
+    }
 }
 
 // exports
