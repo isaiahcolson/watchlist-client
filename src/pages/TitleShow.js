@@ -61,18 +61,20 @@ class TitleShow extends React.Component {
                         <div className="title-info">
                             <div className="title-info__header">
                                 <h2>{this.state.title.name}</h2>
-                                <h2>{this.state.title.rating}<i className="fas fa-star"></i></h2>
-                                {this.state.user ?
-                                    <div>
-                                        {this.state.add ?
-                                            <button onClick={this.removeTitle}><i className="fas fa-minus-circle"></i></button>
-                                        :
-                                            <button onClick={this.addTitle}><i className="fas fa-plus-circle"></i></button>
-                                        }
-                                    </div>
-                                :
-                                    <p>Loading...</p>
-                                }
+                                <div className="title-actions">
+                                    <h2>{this.state.title.rating}<i className="fas fa-star"></i></h2>
+                                    {this.state.user ?
+                                        <div>
+                                            {this.state.add ?
+                                                <button onClick={this.removeTitle}><i className="fas fa-minus-circle"></i></button>
+                                            :
+                                                <button onClick={this.addTitle}><i className="fas fa-plus-circle"></i></button>
+                                            }
+                                        </div>
+                                    :
+                                        <p>Loading...</p>
+                                    }
+                                </div>
                             </div>
                             <div className="title-info__sub">
                                 <div className="title-info__stats">

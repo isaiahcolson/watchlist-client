@@ -123,48 +123,15 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 * style login for mobile
 
 ### Phase 3 (Mon Jul 13 - Tue Jul 14)
-* redo profile wireframe
-- [x] change navbar for users to show watchlist and profile
-- [x] update typography sheet with new sizes
-* show user info on profile page
-- [x] push everything down for now
-- [x] move logout button to profile page
-- [x] add link to watchlist page
-- [x] show user name on profile page
-- [x] add the remaining user info
-* create watchlist page
-- [x] create new route for watchlist with boilerplate JSX
-- [x] in back end in signup route, db.Watchlist.create a default Watchlist and set user id to token, this will give a default watchlist for the user
-- [x] reference express blog
-- [x] create watchlist show route
-- [x] add watchlist to models
-- [x] create watchlist card component
+* redo profile wireframe, change navbar for users to show watchlist and profile
+* show user info on profile page, move logout button to profile page, add link to watchlist page
+* create watchlist page, add watchlist to models
 * user can click title on titles show page and add to their watchlist
-- [x] add button to title show page
-- [x] add watchlist put route, test put route in insomnia, user should be able to add title id to watchlist id
-- [x] add title info to watchlist card, show title name on watchlist
-- [x] link add button on title show page to put route
 * add wireframe for titles show page
-* style titles show page
-- [x] add posterImage, timeLength, storyline, mpaaRating to title model
-- [x] reseed data
-- [x] show all needed pieces on screen
-- [x] position elements in place, fix preferred styling
-* user can remove title from watchlist
-- [x] add remove route
-- [x] add remove button on title show page
-- [x] replace add button with remove button if watchlist has title in it
+* style titles show page, add posterImage, timeLength, storyline, mpaaRating to title model
+* user can remove title from watchlist, replace add button with remove button if watchlist has title in it
 * change navbar watchlist link to user's watchlist
-* style profile page
-- [x] reevaluate profile page wireframe
-- [x] add count for user's titles
-- [x] add delete route for profile
-- [x] create new page for user delete
-- [x] set profile delete button to delete window, add no button that will route back to the profile
-- [x] style destroy page, add confirm button to delete users account
-- [x] set confirm button to destroy and test
-- [x] show users title information
-- [x] set profile titles as links
+* style profile page, add delete route for profile, show users title information
 * increase seeded data to 25 movies and 25 shows
 
 ### Phase 4 (Wed Jul 15 - Thur Jul 16)
