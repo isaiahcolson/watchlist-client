@@ -45,7 +45,7 @@ class Profile extends React.Component {
                             <div className="profile-links">
                                 <Link to={`/watchlists/${this.state.user.watchlists[0]._id}`}>My Watchlist</Link>
                                 <a href='/logout' onClick={this.props.logout}>Log Out</a>
-                                <Link to='/profile'>Delete Account</Link>
+                                <Link to={`/auth/${this.state.user._id}`}>Delete Account</Link>
                             </div>
                         </div>
 
