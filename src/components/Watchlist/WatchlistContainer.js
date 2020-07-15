@@ -1,5 +1,6 @@
 import React from 'react';
 import WatchlistCard from './WatchlistCard';
+import './WatchlistContainer.css'
 
 const WatchlistContainer = (props) => {
     function generateTitles(titles) {
@@ -9,9 +10,10 @@ const WatchlistContainer = (props) => {
     }
 
     return(
-        <div className="titles-container">
-            {generateTitles(props.titles)}
-            {/* <p>{props.titles[0].name}</p> */}
+        <div className="watchlist-container">
+            <div className="watchtitles">
+                {generateTitles(props.titles)}
+            </div>
         </div>
     );
 }

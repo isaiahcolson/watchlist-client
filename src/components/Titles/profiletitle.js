@@ -23,7 +23,9 @@ class ProfileTitle extends React.Component {
             <div>
                 {this.state.title ?
                     <div className="protitle-container">
-                        <Link to={`/titles/${this.state.title._id}`}><img src={this.state.title.posterImage} alt={this.state.title.name}/></Link>
+                        <Link to={`/titles/${this.state.title._id}`}>
+                            <img src={this.state.title.posterImage} alt={this.state.title.name}/>
+                        </Link>
                         {/* <p>{this.state.title.name}</p> */}
                     </div>
                 :

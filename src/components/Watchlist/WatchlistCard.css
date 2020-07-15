@@ -1,0 +1,9 @@
+.card-container img {
+    border-radius: 5px;
+    width: 15vw;
+    transition: 0.3s ease;
+}
+
+.card-container img:hover {
+    box-shadow: 0 15px 25px var(--gray-dark);
+}

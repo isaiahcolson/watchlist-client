@@ -21,8 +21,7 @@ class Watchlist extends React.Component {
 
     render () {
         return(
-            <div className="watchlist-container">
-                <p>You are on the watchlist page.</p>
+            <div className="watchlist">
                 {this.state.titles.length > 0 && <WatchlistContainer titles={this.state.titles} />}
             </div>
         );

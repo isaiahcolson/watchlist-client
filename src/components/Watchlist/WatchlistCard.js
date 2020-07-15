@@ -1,13 +1,17 @@
 // imports
 import React from 'react';
+import {Link} from 'react-router-dom';
+import './WatchlistCard.css';
 
 // component that renders watchlist titles
 const WatchlistCard = (props) => {
-    const {name} = props.title;
+    const {name, posterImage, _id} = props.title;
 
     return(
-        <div>
-            <p>{name}</p>
+        <div className="card-container">
+            <Link to={`/titles/${_id}`}>
+                <img src={posterImage} alt={name} />
+            </Link>
         </div>
     );
 }

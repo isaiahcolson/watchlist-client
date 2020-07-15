@@ -137,22 +137,28 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 ### Phase 4 (Wed Jul 15 - Thur Jul 16)
 * user can manually order their watchlist
 * style watchlist page
-- [ ] determine best action forward, styling then adding manual orderi
-- [ ] set titles to links to title show pages
+- [x] determine best action forward, styling then adding manual orderi
+- [X] set titles to links to title show pages, replace title names with images
+- [ ] allow drag and drop for watchlist
+
+* add 10 movies and 10 shows of seeded data
 
 * style titles page
 * section by genre on titles page
 * section by type on titles page
 
-* increase seeded data to 100 movies and 100 shows
+* add 10 movies and 10 shows of seeded data
 
 * final touches
+- [ ] increase side margins of storyline on titles show page
+- [ ] add extra info to landing page
 - [ ] update yellow color in color palette
 - [ ] add react flowchart to ERD picture
 - [ ] change favicon
 - [ ] update README with new wireframes
 - [ ] update README with final design assets
 - [ ] update login route to users watchlist
+* add 5 movies and 5 shows of seeded data
 * deploy project
 
 ### Stretch

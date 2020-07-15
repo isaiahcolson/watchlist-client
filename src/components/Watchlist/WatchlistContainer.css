@@ -1,0 +1,15 @@
+.watchlist-container {
+    width: calc(100vw - 144px);
+}
+
+.watchtitles {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.watchtitles div {
+    margin: 12px;
+    text-align: center;
+}
