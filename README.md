@@ -139,7 +139,10 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 * style watchlist page
 - [x] determine best action forward, styling then adding manual orderi
 - [X] set titles to links to title show pages, replace title names with images
-- [ ] allow drag and drop for watchlist
+- [x] allow drag and drop for watchlist
+- [ ] set users index for drag and drop
+- [ ] rethink watchlist wireframe
+- [ ] add watchlist header and finalize positioning
 
 * add 10 movies and 10 shows of seeded data
 

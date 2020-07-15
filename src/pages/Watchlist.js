@@ -1,4 +1,5 @@
 import React from 'react';
+import {DragDropContext, Droppable} from 'react-beautiful-dnd';
 import WatchlistModel from '../models/Watchlist';
 import WatchlistContainer from '../components/Watchlist/WatchlistContainer';
 import './watchlist.css';
@@ -21,9 +22,20 @@ class Watchlist extends React.Component {
 
     render () {
         return(
-            <div className="watchlist">
-                {this.state.titles.length > 0 && <WatchlistContainer titles={this.state.titles} />}
-            </div>
+            <DragDropContext >
+                <div className="watchlist">
+                    {this.state.titles.length > 0 &&
+                        <Droppable droppableId="1">
+                            {(provided) => (
+                                <div ref={provided.innerRef} {...provided.droppableProps} >
+                                    <WatchlistContainer titles={this.state.titles} />
+                                    {provided.placeholder}
+                                </div>
+                            )}
+                        </Droppable>
+                    }
+                </div>
+            </DragDropContext>
         );
     }
 }

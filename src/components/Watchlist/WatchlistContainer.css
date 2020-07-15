@@ -1,15 +1,13 @@
 .watchlist-container {
-    width: calc(100vw - 144px);
+    display: flex;
 }
 
-.watchtitles {
-    margin: 0 auto;
+/* .watchtitles {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-}
+} */
 
 .watchtitles div {
     margin: 12px;
-    text-align: center;
 }
