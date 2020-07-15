@@ -164,6 +164,7 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] style destroy page, add confirm button to delete users account
 - [x] set confirm button to destroy and test
 - [x] show users title information
+- [x] set profile titles as links
 * increase seeded data to 25 movies and 25 shows
 
 ### Phase 4 (Wed Jul 15 - Thur Jul 16)

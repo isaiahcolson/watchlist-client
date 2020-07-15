@@ -1,6 +1,7 @@
 import React from 'react';
 import TitleModel from '../../models/title';
 import './profiletitle.css';
+import { Link } from 'react-router-dom';
 
 class ProfileTitle extends React.Component {
     state = {
@@ -22,11 +23,11 @@ class ProfileTitle extends React.Component {
             <div>
                 {this.state.title ?
                     <div className="protitle-container">
-                        <img src={this.state.title.posterImage} alt={this.state.title.name}/>
-                        <p>{this.state.title.name}</p>
+                        <Link to={`/titles/${this.state.title._id}`}><img src={this.state.title.posterImage} alt={this.state.title.name}/></Link>
+                        {/* <p>{this.state.title.name}</p> */}
                     </div>
                 :
-                    <p>There are no titles</p>
+                    <p></p>
                 }
             </div>
         );

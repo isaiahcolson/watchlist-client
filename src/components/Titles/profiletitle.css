@@ -1,4 +1,10 @@
 .protitle-container img {
+    border-radius: 5px;
     margin-bottom: 6px;
     height: 162px;
+    transition: 0.3s ease;
+}
+
+.protitle-container img:hover {
+    box-shadow: 0 15px 25px var(--gray-dark);
 }
