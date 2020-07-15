@@ -161,8 +161,8 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] add delete route for profile
 - [x] create new page for user delete
 - [x] set profile delete button to delete window, add no button that will route back to the profile
-- [ ] add confirm button to delete users account
-- [ ] style destroy page
+- [x] style destroy page, add confirm button to delete users account
+- [ ] set confirm button to destroy and test
 - [ ] show users title information
 
 * increase seeded data to 25 movies and 25 shows

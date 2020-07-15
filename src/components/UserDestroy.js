@@ -6,9 +6,12 @@ class UserDestroy extends React.Component {
     render() {
         return(
             <div className="destroy-container">
-                <p>You are about to delete your account.</p>
-                <p>Are you sure you would like to proceed?</p>
-                <Link to='/profile'>No</Link>
+                <h3>You are about to delete your account.</h3>
+                <h3>Are you sure you would like to proceed?</h3>
+                <div className="destroy-buttons">
+                    <Link to='/profile'>No, Return</Link>
+                    <Link>Yes, Delete</Link>
+                </div>
             </div>
         );
     }

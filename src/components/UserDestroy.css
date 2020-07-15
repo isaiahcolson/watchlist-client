@@ -1,3 +1,40 @@
 .destroy-container {
     margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+}
+
+.destroy-buttons {
+    margin-top: 32px;
+}
+
+.destroy-buttons a {
+    margin: 0 18px;
+    text-decoration: none;
+    font-size: var(--h4-size);
+    font-weight: var(--h4-weight);
+}
+
+.destroy-buttons a:first-child {
+    color: var(--accent1);
+    transition: 0.3s ease;
+}
+
+.destroy-buttons a:first-child:hover {
+    color: var(--accent1-dark);
+}
+
+.destroy-buttons a:last-child {
+    padding: 7px 14px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--secondary);
+    transition: 0.3s ease;
+}
+
+.destroy-buttons a:last-child:hover {
+    background-color: var(--secondary-dark);
 }
