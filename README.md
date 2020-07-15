@@ -154,9 +154,6 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] add remove route
 - [x] add remove button on title show page
 - [x] replace add button with remove button if watchlist has title in it
-
-
-
 * change navbar watchlist link to user's watchlist
 * style profile page
 - [ ] reevaluate profile page wireframe
@@ -165,55 +162,59 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [ ] add count for user's movies
 - [ ] add count for user's shows
 
+* increase seeded data to 25 movies and 25 shows
 
-
+### Phase 4 (Wed Jul 15 - Thur Jul 16)
+* user can manually order their watchlist
 * style watchlist page
 - [ ] determine best action forward, styling then adding manual orderi
 - [ ] set titles to links to title show pages
 
-
-
-* increase seeded data to 25 movies and 25 shows
-
-
-
-
-* hide pages to unauthenticated users
-- [ ] for page gatekeeping, add props.currentUser in routes for pages that I want hidden, like how we did for the navbar
-- [ ] change navbar watchlist link to hold user info
-- [ ] fix nav if token has expired
-- [ ] adjust images on title show page
-
-### Phase 4 (Wed Jul 15 - Thur Jul 16)
-* user can manually order their watchlist
 * style titles page
 * section by genre on titles page
-* user can add titles from titles page
-* add 404 catch route
-* add form validation
-- [ ] add submit button disabled styling
-- [ ] add submit button logic
-- [ ] add signup error messages for invalid fields
-- [ ] add login error messages for invalid fields
+* section by type on titles page
+
+* increase seeded data to 100 movies and 100 shows
+
 * final touches
 - [ ] update yellow color in color palette
 - [ ] add react flowchart to ERD picture
 - [ ] change favicon
 - [ ] update README with new wireframes
 - [ ] update README with final design assets
+- [ ] update login route to users watchlist
 * deploy project
 
 ### Stretch
 * add button on title card that will add or remove titles from watchlist
+
+* hide pages to unauthenticated users
+- [ ] for page gatekeeping, add props.currentUser in routes for pages that I want hidden, like how we did for the navbar
+- [ ] fix nav if token has expired
+* add form validation
+- [ ] add submit button disabled styling
+- [ ] add submit button logic
+- [ ] add signup error messages for invalid fields
+- [ ] add login error messages for invalid fields
+
 * user can edit their account
+
+* add 404 catch route
+
 * add profile photo for user
-* section by type on titles page
+
 * style profile page for mobile
 * style titles show page for mobile
+* style titles page for mobile
+
 * style nav for 4k
 * style landing for 4k
 * style signup for 4k
 * style login for 4k
+* style profile page for 4k
+* style titles show page for 4k
+* style titles page for 4k
+
 * user can create multiple lists
 - [ ] setup Watchlist show route
 - [ ] setup Watchlist update route
