@@ -3,6 +3,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import TitleModel from '../models/title';
 import UserModel from '../models/User';
+import ProfileTitle from '../components/Titles/profiletitle';
 import './profile.css';
 
 // profile page with users information
@@ -38,7 +39,7 @@ class Profile extends React.Component {
                 {this.state.user ? 
                     <div className="profile-container">
                         <div className="profile-left">
-                            <h3>My Profile - edit</h3>
+                            <h3>My Profile</h3>
                             <h4>{this.state.user.firstName} {this.state.user.lastName}</h4>
                             <p>{this.state.user.username}</p>
                             <p>{this.state.user.email}</p>
@@ -53,10 +54,11 @@ class Profile extends React.Component {
                             <h3>Next Titles in Watchlist</h3>
                             <div className="profile-titles">
                                 <div className="profile-titles__1">
-                                    <p>{this.state.user.watchlists[0].titles[0]}</p>
-                                    <p>{this.state.user.watchlists[0].titles[1]}</p>
-                                    <p></p>
-                                </div>
+                                    <div className="protitle">
+                                        <ProfileTitle titleId={this.state.user.watchlists[0].titles[0]} />
+                                        <ProfileTitle titleId={this.state.user.watchlists[0].titles[1]} />
+                                    </div>
+                                </div> 
                                 <div className="profile-titles__2">
                                     
                                 </div>
