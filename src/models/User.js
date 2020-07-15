@@ -23,6 +23,12 @@ class UserModel {
         }).then(res => res.json());
     }
 
+    static destroy(userId) {
+        return fetch(`${URL}/${userId}`, {
+            method: "Delete"
+        }).then((res) => res.json());
+    }
+
     static profile(data) {
         return fetch(`${URL}/profile`, {
             headers: {

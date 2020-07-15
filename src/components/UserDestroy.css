@@ -18,23 +18,28 @@
     font-weight: var(--h4-weight);
 }
 
-.destroy-buttons a:first-child {
+.destroy-buttons a {
     color: var(--accent1);
     transition: 0.3s ease;
 }
 
-.destroy-buttons a:first-child:hover {
+.destroy-buttons a {
     color: var(--accent1-dark);
 }
 
-.destroy-buttons a:last-child {
+.destroy-buttons button {
+    margin: 0 18px;
+    border: none;
+    font-size: var(--h4-size);
+    font-weight: var(--h4-weight);
     padding: 7px 14px;
     border-radius: 5px;
     color: var(--white);
     background-color: var(--secondary);
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
-.destroy-buttons a:last-child:hover {
+.destroy-buttons button:hover {
     background-color: var(--secondary-dark);
 }

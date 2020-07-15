@@ -33,7 +33,6 @@ function Routes(props) {
             }}
             />
             <Route path='/titles' component={Home} />
-            {/* <Route path='/profile' component={Profile} currentUser={props.currentUser} /> */}
             <Route path='/profile'
             render={(routeComponentProps) => {
                 return <Profile 
