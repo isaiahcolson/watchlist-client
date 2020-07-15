@@ -8,6 +8,7 @@ import Profile from '../pages/Profile';
 import Signup from '../pages/Signup';
 import TitleShow from '../pages/TitleShow';
 import Watchlist from '../pages/Watchlist';
+import UserDestroy from '../components/UserDestroy';
 
 // routes
 function Routes(props) {
@@ -41,6 +42,14 @@ function Routes(props) {
                     logout={props.logout}
                 />
             }} />
+            <Route path='/auth/:id'
+            render={(routeComponentProps) => {
+                return <UserDestroy 
+                    { ...routeComponentProps }
+                    userData={props.userData}
+                />
+            }}
+            />
             <Route path='/watchlists/:id/add'
             render={(routeComponentProps) => {
                 return <Watchlist 

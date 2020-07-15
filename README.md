@@ -156,11 +156,13 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] replace add button with remove button if watchlist has title in it
 * change navbar watchlist link to user's watchlist
 * style profile page
-- [ ] reevaluate profile page wireframe
-- [ ] add update route for profile
-- [ ] add delete route for profile
-- [ ] add count for user's movies
-- [ ] add count for user's shows
+- [x] reevaluate profile page wireframe
+- [x] add count for user's titles
+- [x] add delete route for profile
+- [x] create new page for user delete
+- [ ] set profile delete button to delete window
+- [ ] add confirm button to delete users account
+- [ ] show users title information
 
 * increase seeded data to 25 movies and 25 shows
 

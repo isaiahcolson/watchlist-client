@@ -28,6 +28,10 @@ class Profile extends React.Component {
         });
     }
 
+    displayTitle = () => {
+        console.log(this);
+    }
+
     render() {
         return(
             <div className="profile">
@@ -50,16 +54,18 @@ class Profile extends React.Component {
                             <div className="profile-titles">
                                 <div className="profile-titles__1">
                                     <p>{this.state.user.watchlists[0].titles[0]}</p>
+                                    <p>{this.state.user.watchlists[0].titles[1]}</p>
+                                    <p></p>
                                 </div>
                                 <div className="profile-titles__2">
-                                    <p>{this.state.user.watchlists[0].titles[1]}</p>
+                                    
                                 </div>
                             </div>
                             <h4>{this.state.user.watchlists[0].titles.length} Titles in Watchlist.</h4>
                         </div>
                     </div>
                 :
-                    <p>You are in the wrong place.</p>
+                    <p>Loading account information.</p>
                 }
             </div>
         );
