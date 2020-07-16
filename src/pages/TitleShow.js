@@ -66,9 +66,9 @@ class TitleShow extends React.Component {
                                     {this.state.user ?
                                         <div>
                                             {this.state.add ?
-                                                <button onClick={this.removeTitle}><i class="fas fa-check"></i> Watchlist</button>
+                                                <button onClick={this.removeTitle}><i className="fas fa-check"></i> Watchlist</button>
                                             :
-                                                <button onClick={this.addTitle}><i class="fas fa-plus"></i> Watchlist</button>
+                                                <button onClick={this.addTitle}><i className="fas fa-plus"></i> Watchlist</button>
                                             }
                                         </div>
                                     :

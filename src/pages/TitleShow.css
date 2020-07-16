@@ -129,5 +129,55 @@
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
+    .title-content div {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .title-coverImage {
+        height: 420px;
+    }
     
+    .title-posterImage {
+        top: 124px;
+        left: 60px;
+    }
+    
+    .title-info {
+        margin-top: 440px;
+        margin-left: 60px;
+    }
+    
+    .title-info__header > h2 {
+        width: 75vw;
+    }
+    
+    .title-content div {
+        width: 420px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title-coverImage {
+        height: 300px;
+    }
+    
+    .title-posterImage {
+        top: 100px;
+        left: 48px;
+    }
+    
+    .title-info {
+        margin-top: 416px;
+        margin-left: 48px;
+    }
+    
+    .title-info__header > h2 {
+        width: 80vw;
+    }
+    
+    .title-content div {
+        width: 280px;
+    }
 }

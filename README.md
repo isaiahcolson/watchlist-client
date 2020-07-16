@@ -156,7 +156,7 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 * final touches, finalize styling and MVP
  * title show page
   - [X] increase side margins of storyline on titles show page, change button to be "+ Watchlist"
-  - [ ] style titles show page for mobile
+  - [x] style titles show page for mobile
   - [ ] add 5 movies and 5 shows of seeded data
 
  * titles page
@@ -189,6 +189,8 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 * deploy project
 
 ### Stretch
+* add related titles to bottom of title show page
+
 * add button on title card that will add or remove titles from watchlist
 
 * hide pages to unauthenticated users
