@@ -4,12 +4,12 @@ import {Link} from 'react-router-dom';
 
 // component that renders title data
 const TitleCard = (props) => {
-    const {name, _id} = props.title;
+    const {posterImage, _id, name} = props.title;
     
     return(
         <Link to={`/titles/${_id}`}>
             <div>
-                <p>{name}</p>
+                <img src={posterImage} alt={name} />
             </div>
         </Link>
     )

@@ -143,12 +143,14 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] rethink watchlist wireframe
 - [X] add watchlist header and finalize positioning
 - [ ] send new watchlist order to database
-
 * add 10 movies and 10 shows of seeded data
 
-* style titles page
-* section by genre on titles page
-* section by type on titles page
+* style titles page, section by genre and types
+- [X] switch name for poster
+- [X] create a new MovieFilter component
+- [ ] display titles in horizontal row with overflow scroll
+- [ ] 
+- [ ] 
 
 * add 10 movies and 10 shows of seeded data
 

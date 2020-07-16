@@ -1,7 +1,8 @@
 // imports
 import React from 'react';
 import TitleModel from '../models/title';
-import Titles from '../components/Titles/Titles';
+// import Titles from '../components/Titles/Titles';
+import MovieFilter from '../components/Titles/TitleFilter/MovieFilter';
 
 // home page for auth users
 class Home extends React.Component {
@@ -21,7 +22,7 @@ class Home extends React.Component {
 
     render() {
         return(
-            <Titles data={this.state.titles} />
+            <MovieFilter data={this.state.titles} />
         );
     }
 }
