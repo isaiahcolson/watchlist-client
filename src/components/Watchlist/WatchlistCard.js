@@ -6,7 +6,7 @@ import './WatchlistCard.css';
 
 // component that renders watchlist titles
 const WatchlistCard = (props) => {
-    const {name, posterImage, _id} = props.title;
+    const {name, posterImage, _id, coverImage} = props.title;
 
     return(
         <Draggable draggableId={_id} index={props.index} >
@@ -19,7 +19,10 @@ const WatchlistCard = (props) => {
                         ref={provided.innerRef} >
                             <div>
                                 <Link to={`/titles/${_id}`}>
-                                    <img src={posterImage} alt={name} />
+                                    <div className="">
+                                        <img src={posterImage} alt={name} />
+                                        <img src={coverImage} alt={name} />
+                                    </div>
                                 </Link>
                             </div>
                     </div>

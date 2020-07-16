@@ -20,11 +20,28 @@ class Watchlist extends React.Component {
         });
     }
 
+    onDragEnd = result => {
+        const {destination, source} = result;
+        // console.log(this.state.titles);
+        if (!destination) {
+            return;
+        }
+        if (destination.droppableId === source.droppableId && destination.index === source.index) {
+            return;
+        }
+        const watchlist = this.state.titles;
+        // console.log(watchlist);
+        const moveMovie = watchlist.splice(source.index, 1);
+        watchlist.splice(destination.index, 0, ...moveMovie);
+        // console.log(watchlist);
+        this.setState({titles: watchlist});
+    }
+
     render () {
         return(
-            <DragDropContext >
+            <DragDropContext onDragEnd={this.onDragEnd} >
                 <div className="watchlist">
-                    {this.state.titles.length > 0 &&
+                    {this.state.titles &&
                         <Droppable droppableId="1">
                             {(provided) => (
                                 <div ref={provided.innerRef} {...provided.droppableProps} >
