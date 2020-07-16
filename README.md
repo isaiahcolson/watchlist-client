@@ -144,26 +144,48 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [X] add watchlist header and finalize positioning
 - [ ] send new watchlist order to database
 * add 10 movies and 10 shows of seeded data
-
 * style titles page, section by genre and types
 - [X] switch name for poster
 - [X] create a new MovieFilter component
 - [x] display titles in horizontal row with overflow scroll
-- [X] add filter for all shows, drama, comedy, action
-crime, animation, mystery, adventure, fantasy, history, horror, romance, sci-fi, sitcom, thriller, war
-
+- [X] add filter for all shows, drama, comedy, action, crime, animation, mystery, adventure, fantasy, history, horror, romance, sci-fi, sitcom, thriller, war
 * add 10 movies and 10 shows of seeded data
 
-* final touches
-- [ ] increase side margins of storyline on titles show page
-- [ ] add extra info to landing page
-- [ ] update yellow color in color palette
-- [ ] add react flowchart to ERD picture
-- [ ] change favicon
-- [ ] update README with new wireframes
-- [ ] update README with final design assets
-- [ ] update login route to users watchlist
-* add 5 movies and 5 shows of seeded data
+
+
+* final touches, finalize styling and MVP
+ * title show page
+  - [X] increase side margins of storyline on titles show page, change button to be "+ Watchlist"
+  - [ ] style titles show page for mobile
+  - [ ] add 5 movies and 5 shows of seeded data
+
+ * titles page
+  - [ ] bring titles closer together
+  - [ ] bring filtered sections closer together
+  - [ ] add featured title every 3 or 4 filters
+  - [ ] style titles page for mobile
+  - [ ] add 5 movies and 5 shows of seeded data
+
+ * profile page
+ - [ ] style profile page for mobile
+ - [ ] add 5 movies and 5 shows of seeded data
+
+ * landing page
+  - [ ] add extra info to landing page
+  - [ ] add 5 movies and 5 shows of seeded data
+
+ * overall
+  - [ ] change favicon
+  - [ ] update README with new wireframes
+  - [ ] update README with final design assets
+  - [ ] update yellow color in color palette
+  - [ ] add react flowchart to ERD picture
+  - [ ] add 5 movies and 5 shows of seeded data
+
+  * reg pages
+   - [ ] fix nav if token has expired
+   - [ ] add 5 movies and 5 shows of seeded data
+
 * deploy project
 
 ### Stretch
@@ -171,7 +193,6 @@ crime, animation, mystery, adventure, fantasy, history, horror, romance, sci-fi,
 
 * hide pages to unauthenticated users
 - [ ] for page gatekeeping, add props.currentUser in routes for pages that I want hidden, like how we did for the navbar
-- [ ] fix nav if token has expired
 * add form validation
 - [ ] add submit button disabled styling
 - [ ] add submit button logic
@@ -183,10 +204,6 @@ crime, animation, mystery, adventure, fantasy, history, horror, romance, sci-fi,
 * add 404 catch route
 
 * add profile photo for user
-
-* style profile page for mobile
-* style titles show page for mobile
-* style titles page for mobile
 
 * style nav for 4k
 * style landing for 4k

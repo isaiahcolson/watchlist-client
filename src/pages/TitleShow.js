@@ -62,13 +62,13 @@ class TitleShow extends React.Component {
                             <div className="title-info__header">
                                 <h2>{this.state.title.name}</h2>
                                 <div className="title-actions">
-                                    <h2>{this.state.title.rating}<i className="fas fa-star"></i></h2>
+                                    <h3>{this.state.title.rating}<i className="fas fa-star"></i></h3>
                                     {this.state.user ?
                                         <div>
                                             {this.state.add ?
-                                                <button onClick={this.removeTitle}><i className="fas fa-minus-circle"></i></button>
+                                                <button onClick={this.removeTitle}><i class="fas fa-check"></i> Watchlist</button>
                                             :
-                                                <button onClick={this.addTitle}><i className="fas fa-plus-circle"></i></button>
+                                                <button onClick={this.addTitle}><i class="fas fa-plus"></i> Watchlist</button>
                                             }
                                         </div>
                                     :
@@ -86,8 +86,10 @@ class TitleShow extends React.Component {
                             </div>
                         </div>
                         <div className="title-content">
-                            <h4>Storyline</h4>
-                            <p>{this.state.title.storyline}</p>
+                            <div>
+                                <h4>Storyline</h4>
+                                <p>{this.state.title.storyline}</p>
+                            </div>
                         </div>
                         
                         
