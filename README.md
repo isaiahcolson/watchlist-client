@@ -149,8 +149,8 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [X] switch name for poster
 - [X] create a new MovieFilter component
 - [x] display titles in horizontal row with overflow scroll
-- [ ] 
-- [ ] 
+- [X] add filter for all shows, drama, comedy, action
+crime, animation, mystery, adventure, fantasy, history, horror, romance, sci-fi, sitcom, thriller, war
 
 * add 10 movies and 10 shows of seeded data
 

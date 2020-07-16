@@ -4,10 +4,10 @@ import TitleCard from '../TitleCard';
 import '../Titles.css';
 
 // component that generates all titles in database
-const MovieFilter = (props) => {
+const ActionFilter = (props) => {
     function generateTitles(titles) {
         return titles.map((title) => {
-            if (title.mediaType === "movie") {
+            if (title.genres.includes("Action")) {
                 return (
                     <div className="title" key={title._id}>
                         <TitleCard title={title} />
@@ -26,4 +26,4 @@ const MovieFilter = (props) => {
 }
 
 // exports
-export default MovieFilter;
+export default ActionFilter;
