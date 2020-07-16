@@ -1,15 +1,19 @@
 // imports
 import React from 'react';
 import TitleCard from '../TitleCard';
+import '../Titles.css';
 
 // component that generates all titles in database
 const Titles = (props) => {
     function generateTitles(titles) {
         return titles.map((title) => {
             if (title.mediaType === "movie") {
-                return <TitleCard key={title._id} title={title} />
-            } else {
-                return null;
+                return (
+                    <div className="title" key={title._id}>
+                        <TitleCard title={title} />
+                    </div>
+                )} else {
+                    return null;
             }
         });
     }

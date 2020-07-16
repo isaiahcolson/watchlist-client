@@ -148,7 +148,7 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 * style titles page, section by genre and types
 - [X] switch name for poster
 - [X] create a new MovieFilter component
-- [ ] display titles in horizontal row with overflow scroll
+- [x] display titles in horizontal row with overflow scroll
 - [ ] 
 - [ ] 
 
