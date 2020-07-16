@@ -20,9 +20,12 @@ class Watchlist extends React.Component {
         });
     }
 
+    replaceWatchlist = () => {
+        WatchlistModel.updateReplace(this.props.match.params.id, this.state.titles);
+    }
+
     onDragEnd = result => {
         const {destination, source} = result;
-        // console.log(this.state.titles);
         if (!destination) {
             return;
         }
@@ -30,11 +33,9 @@ class Watchlist extends React.Component {
             return;
         }
         const watchlist = this.state.titles;
-        // console.log(watchlist);
         const moveMovie = watchlist.splice(source.index, 1);
         watchlist.splice(destination.index, 0, ...moveMovie);
-        // console.log(watchlist);
-        this.setState({titles: watchlist});
+        this.setState({titles: watchlist}, this.replaceWatchlist);
     }
 
     render () {

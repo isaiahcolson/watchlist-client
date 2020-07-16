@@ -1,13 +1,17 @@
 .titles-container {
-    margin-top: 36px;
+    margin-top: 14px;
     margin-bottom: 15px;
     display: flex;
 }
 
 .titles-container > div {
-    padding-left: 36px;
+    padding-left: 14px;
+}
+
+.titles-container > div:first-child {
+    padding-left: 34px;
 }
 
 .titles-container > div:last-child {
-    padding-right: 36px;
+    padding-right: 34px;
 }

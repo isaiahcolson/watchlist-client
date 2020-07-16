@@ -22,6 +22,14 @@ class Watchlist {
             body: JSON.stringify({title: titleId})
         }).then((res) => res.json());
     }
+
+    static updateReplace = (watchlistId, newWatchlist) => {
+        return fetch(`${URL}/${watchlistId}/replace`, {
+            method: "PUT",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({titles: newWatchlist})
+        }).then((res) => res.json());
+    }
 }
 
 // exports
