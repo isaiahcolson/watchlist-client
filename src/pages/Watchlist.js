@@ -41,6 +41,7 @@ class Watchlist extends React.Component {
         return(
             <DragDropContext onDragEnd={this.onDragEnd} >
                 <div className="watchlist">
+                    <h2>My Watchlist</h2>
                     {this.state.titles &&
                         <Droppable droppableId="1">
                             {(provided) => (

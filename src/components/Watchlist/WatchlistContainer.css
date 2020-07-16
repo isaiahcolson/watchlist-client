@@ -1,13 +1,3 @@
-.watchlist-container {
-    display: flex;
-}
-
-/* .watchtitles {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-} */
-
-.watchtitles div {
-    margin: 12px;
+.watchtitles {
+    margin-top: 48px;
 }
