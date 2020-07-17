@@ -1,6 +1,7 @@
 // imports
 import React from 'react';
 import TitleModel from '../models/title';
+import {Link} from 'react-router-dom';
 // import Titles from '../components/Titles/Titles';
 import MovieFilter from '../components/Titles/TitleFilter/MovieFilter';
 import ShowFilter from '../components/Titles/TitleFilter/ShowFilter';
@@ -58,6 +59,11 @@ class Home extends React.Component {
                         <ComedyFilter data={this.state.titles} />
                     </div>
                 </div>
+                <div className="title-feature">
+                    <Link to='/titles/5f109d182070fa288dc87d8c'>
+                        <img src="/WL-feature1.png" alt="Mandalorian Feature"/>
+                    </Link>
+                </div>
                 <div className="title-filter">
                     <h2>Sci-Fi</h2>
                     <div>
@@ -75,6 +81,11 @@ class Home extends React.Component {
                     <div>
                         <DramaFilter data={this.state.titles} />
                     </div>
+                </div>
+                <div className="title-feature">
+                    <Link to='/titles/5f109d182070fa288dc87d96'>
+                        <img src="/WL-feature2.png" alt="Spiderverse Feature"/>
+                    </Link>
                 </div>
                 <div className="title-filter">
                     <h2>Mystery</h2>
@@ -94,6 +105,11 @@ class Home extends React.Component {
                         <CrimeFilter data={this.state.titles} />
                     </div>
                 </div>
+                <div className="title-feature">
+                    <Link to='/titles/5f109d182070fa288dc87d60'>
+                        <img src="/WL-feature3.png" alt="Joker Feature"/>
+                    </Link>
+                </div>
                 <div className="title-filter">
                     <h2>Animation</h2>
                     <div>
@@ -112,6 +128,11 @@ class Home extends React.Component {
                         <ThrillerFilter data={this.state.titles} />
                     </div>
                 </div>
+                <div className="title-feature">
+                    <Link to='/titles/5f109d182070fa288dc87da5'>
+                        <img src="/WL-feature4.png" alt="Crown Feature"/>
+                    </Link>
+                </div>
                 <div className="title-filter">
                     <h2>History</h2>
                     <div>
@@ -129,6 +150,11 @@ class Home extends React.Component {
                     <div>
                         <SitcomFilter data={this.state.titles} />
                     </div>
+                </div>
+                <div className="title-feature">
+                    <Link to='/titles/5f109d182070fa288dc87d70'>
+                        <img src="/WL-feature5.png" alt="Boys Feature"/>
+                    </Link>
                 </div>
                 <div className="title-filter">
                     <h2>All Movies</h2>

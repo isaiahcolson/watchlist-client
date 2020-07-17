@@ -142,7 +142,7 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 - [x] allow drag and drop for watchlist
 - [x] rethink watchlist wireframe
 - [X] add watchlist header and finalize positioning
-- [ ] send new watchlist order to database
+- [X] send new watchlist order to database
 * add 10 movies and 10 shows of seeded data
 * style titles page, section by genre and types
 - [X] switch name for poster
@@ -157,7 +157,7 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 * final touches, finalize styling and MVP
   * titles page
   - [X] bring titles and filtered sections closer together
-  - [ ] add featured title under comedy - Mandalorian, adventure - Spiderverse, mystery - Joker, animation - Little Women, history - Wonder Woman
+  - [X] add featured title under comedy - Mandalorian, adventure - Spiderverse, mystery - Joker, animation - The Crown, history - The Boys
   - [ ] style titles page for mobile
 
  * profile page

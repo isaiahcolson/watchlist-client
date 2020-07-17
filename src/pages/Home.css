@@ -13,3 +13,13 @@
 .title-filter > div {
     overflow-y: scroll;
 }
+
+.title-feature {
+    display: flex;
+    justify-content: center;
+}
+
+.title-feature img {
+    width: calc(100vw - 84px);
+    border-radius: 10px;
+}
