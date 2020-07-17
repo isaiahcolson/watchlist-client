@@ -23,3 +23,33 @@
     width: calc(100vw - 84px);
     border-radius: 10px;
 }
+
+@media screen and (max-width: 660px) {
+    .title-feature img {
+        width: calc(100vw - 48px);
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .title-feature img {
+        width: calc(100vw - 40px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home {
+        padding: 64px 0;
+    }
+
+    .title-filter {
+        padding: 12px 0;
+    }
+
+    .title-filter h2 {
+        margin-left: 40px;
+    }
+
+    .title-feature img {
+        width: calc(100vw - 32px);
+    }
+}

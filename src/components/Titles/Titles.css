@@ -15,3 +15,22 @@
 .titles-container > div:last-child {
     padding-right: 34px;
 }
+
+@media screen and (max-width: 480px) {
+    .titles-container {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .titles-container > div {
+        padding-left: 10px;
+    }
+    
+    .titles-container > div:first-child {
+        padding-left: 24px;
+    }
+    
+    .titles-container > div:last-child {
+        padding-right: 24px;
+    }
+}

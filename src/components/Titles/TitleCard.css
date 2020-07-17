@@ -2,8 +2,33 @@
     border: solid 3px var(--white);
     border-radius: 7.5px;
     transition: 0.1s ease;
+    height: 268px;
 }
 
 .poster img:hover {
     border: solid 3px var(--accent1);
+}
+
+@media screen and (max-width: 660px) {
+    .poster img {
+        height: 248px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .poster img {
+        height: 224px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .poster img {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .poster img {
+        height: 180px;
+    }
 }

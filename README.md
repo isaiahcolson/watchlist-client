@@ -136,32 +136,18 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 
 ### Phase 4 (Wed Jul 15 - Thur Jul 16)
 * user can manually order their watchlist
-* style watchlist page
-- [x] determine best action forward, styling then adding manual orderi
-- [X] set titles to links to title show pages, replace title names with images
-- [x] allow drag and drop for watchlist
-- [x] rethink watchlist wireframe
-- [X] add watchlist header and finalize positioning
-- [X] send new watchlist order to database
+* style watchlist page, allow drag and drop for watchlist
 * add 10 movies and 10 shows of seeded data
-* style titles page, section by genre and types
-- [X] switch name for poster
-- [X] create a new MovieFilter component
-- [x] display titles in horizontal row with overflow scroll
-- [X] add filter for all shows, drama, comedy, action, crime, animation, mystery, adventure, fantasy, history, horror, romance, sci-fi, sitcom, thriller, war
+* style titles page, section by genre and types, display titles in horizontal row with overflow scroll
 * increase seeded data to 50 movies and 50 shows
 * finish title show page, increase side margins of storyline on titles show page, change button to be "+ Watchlist", style titles show page for mobile
+* titles page, add featured title banners, style titles page for mobile
 
 
 
 * final touches, finalize styling and MVP
-  * titles page
-  - [X] bring titles and filtered sections closer together
-  - [X] add featured title under comedy - Mandalorian, adventure - Spiderverse, mystery - Joker, animation - The Crown, history - The Boys
-  - [ ] style titles page for mobile
-
  * profile page
- - [ ] style profile page for mobile
+  - [ ] style profile page for mobile
 
  * landing page
   - [ ] add extra info to landing page
