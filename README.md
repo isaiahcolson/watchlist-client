@@ -1,5 +1,5 @@
 # Watch Later
-'Watch Later' is a web app for users to track movies and shows that they want to add to their watch list.
+'Watch Later' is a web app for users to track movies and shows that they want to add to their watch list. I have noticed that there are no streaming services, that I am aware of, that offer manual ordering for user's watchlists. I was recently frustrated that Netflix offered a manual ordering, but it isn't truly manual, there are still unseen factors that are in play. For my capstone project, I set out to create a way to track your watchlist and put it in the order that you want it.
 
 The back end watchlist api can be referenced through [this repo](https://git.generalassemb.ly/colsonisaiah/watchlist-api).
 <!-- TODO add link to final deployed project -->
@@ -15,6 +15,20 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 * Express
 * React
 * Nodejs
+
+### Installation
+To install and run this site locally:
+1. Clone this project, don't forget the API repo as well
+2. Setup the back end
+    * In back end terminal run ```npm i```
+    * ```node seed.js```
+    * ```npm start```
+3. Setup the front end
+    * In front end terminal ```npm start```
+4. Run MongoDB
+    * In new terminal run ```mongod```
+    * Or you may need to run ```brew services start mongodb-community@4.2```
+
 
 
 
@@ -88,7 +102,7 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 * genres
 
 ### ERD
-<!-- TODO place image reference to ERD drawio -->
+![Watch Later Creative Assets](/public/WL-models.png)
 
 
 
@@ -142,23 +156,11 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 * increase seeded data to 50 movies and 50 shows
 * finish title show page, increase side margins of storyline on titles show page, change button to be "+ Watchlist", style titles show page for mobile
 * titles page, add featured title banners, style titles page for mobile
-
-
-
 * final touches, finalize styling and MVP
- * landing page
-  - [ ] add extra info to landing page
-
- * overall
-  - [ ] change favicon
-  - [ ] update README with new wireframes
-  - [ ] update README with final design assets
-  - [ ] update yellow color in color palette
-  - [ ] add react flowchart to ERD picture
-
 * deploy project
 
 ### Stretch
+* add extra info to landing page
 * add related titles to bottom of title show page
 * add button on title card that will add or remove titles from watchlist
 * hide pages to unauthenticated users
