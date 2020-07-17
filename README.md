@@ -146,10 +146,6 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 
 
 * final touches, finalize styling and MVP
- * profile page
-  - [X] redo profile page styling
-  - [ ] style profile page for mobile
-
  * landing page
   - [ ] add extra info to landing page
 

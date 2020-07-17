@@ -41,17 +41,13 @@ class Profile extends React.Component {
                         <h2>My Profile</h2>
                         <div className="prof-info">
                             <div className="prof-info__left">
-                                <p>Name:</p>
-                                <p>Username:</p>
-                                <p>Email:</p>
-                                <Link to={`/watchlists/${this.state.user.watchlists[0]._id}`}>My Watchlist</Link>
-                                <Link to={`/auth/${this.state.user._id}`}>Delete Account</Link>
+                                <p>Full Name: {this.state.user.firstName} {this.state.user.lastName}</p>
+                                <p>Username: {this.state.user.username}</p>
+                                <p>Email: {this.state.user.email}</p>
                             </div>
                             <div className="prof-info__right">
-                                <h4>{this.state.user.firstName} {this.state.user.lastName}</h4>
-                                <h4>{this.state.user.username}</h4>
-                                <h4>{this.state.user.email}</h4>
                                 <a href='/logout' onClick={this.props.logout}>Log Out</a>
+                                <Link to={`/auth/${this.state.user._id}`}>Delete Account</Link>
                             </div>
                         </div>
                         
@@ -62,13 +58,13 @@ class Profile extends React.Component {
                                 <ProfileTitle titleId={this.state.user.watchlists[0].titles[0]} />
                                 <ProfileTitle titleId={this.state.user.watchlists[0].titles[1]} />
                                 <ProfileTitle titleId={this.state.user.watchlists[0].titles[2]} />
-                            </div> 
+                            </div>
+                            <Link to={`/watchlists/${this.state.user.watchlists[0]._id}`}>My Watchlist<i class="fas fa-arrow-right"></i></Link>
                         </div>
                     </div>
                 :
                     <p>Loading account information.</p>
                 }
-                <div className="underlay"></div>
             </div>
         );
     }

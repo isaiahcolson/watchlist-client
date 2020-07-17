@@ -1,5 +1,5 @@
 .protitle-container img {
-    border: solid 3px var(--black);
+    border: solid 3px var(--white);
     border-radius: 7.5px;
     transition: 0.1s ease;
     height: 268px;
@@ -8,4 +8,33 @@
 
 .protitle-container img:hover {
     border: solid 3px var(--accent1);
+}
+
+/* Media Queries */
+@media screen and (max-width: 660px) {
+    .protitle-container img {
+        height: 216px;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .protitle-container img {
+        height: 186px;
+        margin: 0 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .protitle-container img {
+        height: 268px;
+        margin: 8px 0;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .protitle-container img {
+        height: 216px;
+        margin: 6px 0;
+    }
 }

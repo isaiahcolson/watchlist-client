@@ -1,6 +1,6 @@
 .profile {
     margin-top: 132px;
-    color: var(--white);
+    color: var(--black);
 }
 
 .profile-container {
@@ -11,52 +11,66 @@
 }
 
 .prof-info {
-    margin-top: 16px;
+    margin-top: 24px;
     display: flex;
 }
 
 .prof-info p {
-    padding-top: 9px;
+    padding-top: 12px;
 }
 
 .prof-info h4 {
     padding-top: 8px;
 }
 
-.prof-info a {
+.prof-info a, .profile-titles a {
     display: block;
     text-decoration: none;
     font-size: var(--h4-size);
     font-weight: var(--h4-weight);
-    color: var(--white);
-    margin: 12px 0;
+    color: var(--gray-dark);
     transition: 0.3s ease;
 }
 
+.prof-info a {
+    padding-top: 11px;
+}
+
+.profile-titles a {
+    display: inline-block;
+}
+
+.profile-titles i {
+    padding: 0 8px;
+}
+
 .prof-info a:hover {
-    color: var(--gray-dark);
+    color: var(--black);
+}
+
+.profile-titles a:hover {
+    color: var(--black);
 }
 
 .prof-info__left {
-    text-align: right;
-    padding: 0 8px;
+    padding-right: 36px;
 }
 
-.prof-info__left a:last-child {
+.prof-info__right a:last-child {
     color: var(--secondary);
-    margin: 24px 0;
+    margin-top: 33px;
 }
 
-.prof-info__left a:last-child:hover {
-    color: var(--secondary-light);
+.prof-info__right a:last-child:hover {
+    color: var(--secondary-dark);
 }
 
 .prof-info__right {
-    padding: 0 8px;
+    padding-left: 36px;
 }
 
 .profile-titles {
-    margin: 24px 0;
+    margin: 72px 0;
     text-align: center;
 }
 
@@ -67,4 +81,53 @@
 .profile-titles__list {
     display: flex;
     margin: 24px 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 560px) {
+    .prof-info__left {
+        padding-right: 24px;
+    }
+
+    .prof-info__right {
+        padding-left: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .prof-info__left {
+        padding-right: 20px;
+    }
+
+    .prof-info__right {
+        padding-left: 20px;
+    }
+
+    .profile-titles__list {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .prof-info {
+        flex-direction: column;
+    }
+
+    .prof-info__left {
+        padding-right: 0;
+    }
+
+    .prof-info__right {
+        padding-left: 0;
+    }
+
+    .prof-info__right a:last-child {
+        margin-top: 12px;
+    }
+
+    .profile-titles__list {
+        display: flex;
+        flex-direction: column;
+    }
 }
