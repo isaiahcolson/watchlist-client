@@ -38,37 +38,37 @@ class Profile extends React.Component {
             <div className="profile">
                 {this.state.user ? 
                     <div className="profile-container">
-                        <div className="profile-left">
-                            <h3>My Profile</h3>
-                            <h4>{this.state.user.firstName} {this.state.user.lastName}</h4>
-                            <p>{this.state.user.username}</p>
-                            <p>{this.state.user.email}</p>
-                            <div className="profile-links">
+                        <h2>My Profile</h2>
+                        <div className="prof-info">
+                            <div className="prof-info__left">
+                                <p>Name:</p>
+                                <p>Username:</p>
+                                <p>Email:</p>
                                 <Link to={`/watchlists/${this.state.user.watchlists[0]._id}`}>My Watchlist</Link>
-                                <a href='/logout' onClick={this.props.logout}>Log Out</a>
                                 <Link to={`/auth/${this.state.user._id}`}>Delete Account</Link>
                             </div>
-                        </div>
-
-                        <div className="profile-right">
-                            <h3>Next Titles in Watchlist</h3>
-                            <div className="profile-titles">
-                                <div className="profile-titles__1">
-                                    <div className="protitle">
-                                        <ProfileTitle titleId={this.state.user.watchlists[0].titles[0]} />
-                                        <ProfileTitle titleId={this.state.user.watchlists[0].titles[1]} />
-                                    </div>
-                                </div> 
-                                <div className="profile-titles__2">
-                                    
-                                </div>
+                            <div className="prof-info__right">
+                                <h4>{this.state.user.firstName} {this.state.user.lastName}</h4>
+                                <h4>{this.state.user.username}</h4>
+                                <h4>{this.state.user.email}</h4>
+                                <a href='/logout' onClick={this.props.logout}>Log Out</a>
                             </div>
-                            <h4>{this.state.user.watchlists[0].titles.length} Titles in Watchlist.</h4>
+                        </div>
+                        
+                        <div className="profile-titles">
+                            <h4>{this.state.user.watchlists[0].titles.length} Titles in Watchlist</h4>
+                            <h3>Next Titles in Watchlist</h3>
+                            <div className="profile-titles__list">
+                                <ProfileTitle titleId={this.state.user.watchlists[0].titles[0]} />
+                                <ProfileTitle titleId={this.state.user.watchlists[0].titles[1]} />
+                                <ProfileTitle titleId={this.state.user.watchlists[0].titles[2]} />
+                            </div> 
                         </div>
                     </div>
                 :
                     <p>Loading account information.</p>
                 }
+                <div className="underlay"></div>
             </div>
         );
     }

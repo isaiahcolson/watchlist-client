@@ -147,6 +147,7 @@ As a member of 'Watch Later', a user can log in to their account and view a list
 
 * final touches, finalize styling and MVP
  * profile page
+  - [X] redo profile page styling
   - [ ] style profile page for mobile
 
  * landing page
@@ -159,45 +160,17 @@ As a member of 'Watch Later', a user can log in to their account and view a list
   - [ ] update yellow color in color palette
   - [ ] add react flowchart to ERD picture
 
-  * reg pages
-   - [ ] fix nav if token has expired
-
 * deploy project
 
 ### Stretch
 * add related titles to bottom of title show page
-
 * add button on title card that will add or remove titles from watchlist
-
 * hide pages to unauthenticated users
-- [ ] for page gatekeeping, add props.currentUser in routes for pages that I want hidden, like how we did for the navbar
 * add form validation
-- [ ] add submit button disabled styling
-- [ ] add submit button logic
-- [ ] add signup error messages for invalid fields
-- [ ] add login error messages for invalid fields
-
 * user can edit their account
-
 * add 404 catch route
-
 * add profile photo for user
-
-* style nav for 4k
-* style landing for 4k
-* style signup for 4k
-* style login for 4k
-* style profile page for 4k
-* style titles show page for 4k
-* style titles page for 4k
-
 * user can create multiple lists
-- [ ] setup Watchlist show route
-- [ ] setup Watchlist update route
-- [ ] setup Watchlist delete route
-- [ ] setup Watchlist create route
-
-<!-- Here is the link for github README markdown https://guides.github.com/features/mastering-markdown/ -->
 
 <!-- Seeded Data Templage -->
 <!-- 
