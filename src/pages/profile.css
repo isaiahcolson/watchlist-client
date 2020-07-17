@@ -30,6 +30,11 @@
     font-weight: var(--h4-weight);
     color: var(--white);
     margin: 12px 0;
+    transition: 0.3s ease;
+}
+
+.prof-info a:hover {
+    color: var(--gray-dark);
 }
 
 .prof-info__left {
@@ -40,6 +45,10 @@
 .prof-info__left a:last-child {
     color: var(--secondary);
     margin: 24px 0;
+}
+
+.prof-info__left a:last-child:hover {
+    color: var(--secondary-light);
 }
 
 .prof-info__right {

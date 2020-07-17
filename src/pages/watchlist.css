@@ -6,3 +6,26 @@
     display: inline-block;
     margin-top: 20px;
 }
+
+/* Media Queries */
+@media screen and (max-width: 660px) {
+    .watchlist {
+        margin: 72px 48px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .watchlist {
+        margin: 72px 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .watchlist {
+        margin: 72px 12px;
+    }
+    
+    .watchlist h2 {
+        margin-top: 15px;
+    }
+}
