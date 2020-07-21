@@ -1,5 +1,5 @@
 // back end user api url
-const URL = `http://localhost:3001/auth`;
+const URL = `https://dashboard.heroku.com/apps/isaiahcolson-watchlist-api/auth`;
 
 // class for User model that fetches users from database
 class UserModel {
