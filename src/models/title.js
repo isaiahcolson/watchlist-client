@@ -1,5 +1,5 @@
 // back end title api url
-const URL = `https://dashboard.heroku.com/apps/isaiahcolson-watchlist-api/titles`;
+const URL = `https://isaiahcolson-watchlist-api.herokuapp.com/titles`;
 
 // class for Title model that fetches titles from database
 class TitleModel {
