@@ -3,7 +3,7 @@
 
 The back end watchlist api can be referenced through [this repo](https://git.generalassemb.ly/colsonisaiah/watchlist-api).
 <!-- TODO add link to final deployed project -->
-[Here]() is the final deployed project on Heroku.
+[Here](https://isaiahcolson-watchlist.herokuapp.com/) is the final deployed project on Heroku.
 
 
 
