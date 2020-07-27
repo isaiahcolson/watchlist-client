@@ -1,5 +1,5 @@
 // back end user api url
-const URL = `https://isaiahcolson-watchlist.herokuapp.com/auth`;
+const URL = `https://isaiahcolson-watchlist-api.herokuapp.com/auth`;
 
 // class for User model that fetches users from database
 class UserModel {
@@ -11,7 +11,7 @@ class UserModel {
                 'Accept': 'application/json'
             },
             body: JSON.stringify(data)
-        }).then(res => res.json())
+        }).then(res => res.json());
     }
 
     static login(credentials) {
