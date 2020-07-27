@@ -1,5 +1,5 @@
 // back end watchlist api url
-const URL = 'https://isaiahcolson-watchlist-api.herokuapp.com/watchlists';
+const URL = 'https://isaiahcolson-watchlist.herokuapp.com/watchlists';
 
 // class for Watchlist model that fetches watchlists from database
 class Watchlist {
