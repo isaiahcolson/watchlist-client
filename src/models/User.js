@@ -32,8 +32,8 @@ class UserModel {
     static profile(data) {
         return fetch(`${URL}/profile`, {
             headers: {
-                "Content-Type": "application/json",
-                "authorization": `bearer ${localStorage.getItem('uid')}`
+                "content-type": "application/json",
+                "authorization": `Bearer ${localStorage.getItem('uid')}`
             }
         }).then(res => res.json());
     }
