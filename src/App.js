@@ -9,7 +9,7 @@ import './App.css';
 // primary component
 function App(props) {
   const [currentUser, setCurrentUser] = useState(localStorage.getItem('uid'));
-  const [userData, setUserData] = useState(null);
+  const [userData, setUserData] = useState(localStorage.getItem('uid'));
 
   const storeUser = (userId) => {
     setCurrentUser(userId);
