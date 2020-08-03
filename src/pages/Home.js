@@ -60,7 +60,7 @@ class Home extends React.Component {
                     </div>
                 </div>
                 <div className="title-feature">
-                    <Link to='/titles/5f109d182070fa288dc87d8c'>
+                    <Link to='/titles/5f173661561ada0004220652'>
                         <img src="/WL-feature1.png" alt="Mandalorian Feature"/>
                     </Link>
                 </div>
@@ -83,7 +83,7 @@ class Home extends React.Component {
                     </div>
                 </div>
                 <div className="title-feature">
-                    <Link to='/titles/5f109d182070fa288dc87d96'>
+                    <Link to='/titles/5f173661561ada000422065c'>
                         <img src="/WL-feature2.png" alt="Spiderverse Feature"/>
                     </Link>
                 </div>
@@ -106,7 +106,7 @@ class Home extends React.Component {
                     </div>
                 </div>
                 <div className="title-feature">
-                    <Link to='/titles/5f109d182070fa288dc87d60'>
+                    <Link to='/titles/5f173661561ada0004220626'>
                         <img src="/WL-feature3.png" alt="Joker Feature"/>
                     </Link>
                 </div>
@@ -129,7 +129,7 @@ class Home extends React.Component {
                     </div>
                 </div>
                 <div className="title-feature">
-                    <Link to='/titles/5f109d182070fa288dc87da5'>
+                    <Link to='/titles/5f173661561ada000422066b'>
                         <img src="/WL-feature4.png" alt="Crown Feature"/>
                     </Link>
                 </div>
@@ -152,7 +152,7 @@ class Home extends React.Component {
                     </div>
                 </div>
                 <div className="title-feature">
-                    <Link to='/titles/5f109d182070fa288dc87d70'>
+                    <Link to='/titles/5f173661561ada0004220636'>
                         <img src="/WL-feature5.png" alt="Boys Feature"/>
                     </Link>
                 </div>
