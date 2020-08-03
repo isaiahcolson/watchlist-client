@@ -1,9 +1,9 @@
 # Watch Later
 'Watch Later' is a web app for users to track movies and shows that they want to add to their watch list. I have noticed that there are no streaming services, that I am aware of, that offer manual ordering for user's watchlists. I was recently frustrated that Netflix offered a manual ordering, but it isn't truly manual, there are still unseen factors that are in play. For my capstone project, I set out to create a way to track your watchlist and put it in the order that you want it.
 
-The back end watchlist api can be referenced through [this repo](https://git.generalassemb.ly/colsonisaiah/watchlist-api).
+The back end watchlist api can be referenced through [this repo](https://github.com/isaiahcolson/watchlist-api).
 <!-- TODO add link to final deployed project -->
-[Here]() is the final deployed project on Heroku.
+[Here](https://isaiahcolson-watchlist.herokuapp.com/) is the final deployed project on Heroku.
 
 
 
